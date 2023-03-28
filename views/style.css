@@ -1,0 +1,175 @@
+body{
+    /* background-image: url("/images/img1.jpeg"); */
+    /* background-color:white; */
+    
+    text-align: center;
+    background-size: 100% 100%;
+    font-family:"Montesrrat";
+    font-weight: bold;
+    
+    }
+    /*Navbar section*/
+    header{
+        overflow: hidden;
+       background-color: #EFFFFD;
+       /* position: fixed; */
+       top: 0;
+       width: 100%;
+    }
+    .navbar-nav{
+        margin-left: 75%;
+    }
+    
+    /* Home Page */
+    .home{
+        margin:10px 20px  20px;
+    }
+    .home img{
+        height: 700px;
+    }
+    .heading{
+        margin: 20px;
+    }
+    .reg-log{
+        /* border-radius: 10px ; */
+        border-style: inset;
+        margin: 20px;
+    }
+    .tab{
+        /* border-radius: 10px ; */
+        border: 2px solid black;
+        width: 300px;
+        position: relative;
+        margin-left: 40%;
+    }
+    /*Form*/
+     .form{
+        padding: 20px;
+        background-color: #E1FFEE;
+    }
+    .card{
+        margin-left: 50%;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .container{
+        margin-top: 0px;
+    }
+    /*About Page*/
+    #about{
+        margin-top: 80px;
+    }
+    
+    
+    /*Hostels Page*/
+    .hostels{
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+    .hostel-heading{
+        margin: 10px 20px 20px;
+    }
+    
+    /*Boys-Hostels Page*/
+    .boys-hostels{
+        margin: 100px 20px 20px;
+    }
+
+    /*Girls-Hostels*/
+    .girls-hostels{
+      margin: 20px;
+      
+      border-radius: 20px;
+    }
+    
+    .girls-hostels img:hover{
+        opacity: 0.3;
+    }
+    
+    /*Hostels Facility*/
+    .hostels-facility{
+        margin: 20px;
+        /* border-radius: 10px; */
+        /* color: #E1FFEE; */
+    }
+    .hostels-facility img{
+        height: 200px;
+        width: 200px;
+        margin: 20px;   
+    }
+    
+    .btn{
+        margin: 5px;
+    }
+    .btn:hover{
+        color: aqua;
+    }
+    /*Paragraph section*/
+    /* .paragraph{
+        margin: 20px;
+        color: rgb(11, 10, 10);
+        border: 2px solid black;
+
+        text-align: justify;
+        font-size: large;
+        font-style:oblique;
+    } */
+    /*Contact page */
+    .contact-page{
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-side{
+        background-color: #EFFFFD;
+        border-radius: 10px;
+        transform: scale(0.7);
+        border: 2px solid #FFFBF5;
+         margin-top: -150px; 
+        margin-left: -100px;
+        margin-right: 150px;
+        box-shadow: 10px 10px 10px 12px rgb(72, 68, 68);
+    }
+    .right-side{
+        /* border: 5px solid white; */
+        background-color: #ECF2FF;
+        border-radius: 10px;
+        height: 70%;
+        width: 50%;
+        margin-top:15%;
+        margin-right: 10%;
+        box-shadow: 10px 10px 5px 10px rgb(240, 236, 236);
+
+    }
+    /*Footer Section*/
+    footer{
+        /* position: fixed; */
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+       background-color:black;
+        text-align: center;
+        bottom: 10px;
+        width: 100%;
+        color: white;  
+    }
+    .social-img{
+        /* text-align: center; */
+        margin-left: 30%;
+    }
+    .f-img{
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+    /* .details{
+        margin-left: 50%;
+    } */
+    /*Login and Signin Page*/
+    /* #signin-page button{
+        height: 20px;
+        width: 200px;
+    } */
+    
