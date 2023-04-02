@@ -1,7 +1,4 @@
 body{
-    /* background-image: url("/images/img1.jpeg"); */
-    /* background-color:white; */
-    
     text-align: center;
     background-size: 100% 100%;
     font-family:"Montesrrat";
@@ -12,14 +9,13 @@ body{
     header{
         overflow: hidden;
        background-color: #EFFFFD;
-       /* position: fixed; */
        top: 0;
        width: 100%;
     }
-    .navbar-nav{
-        margin-left: 75%;
+    .nav-text:hover{
+        clear: blue;
+        size: 50px;
     }
-    
     /* Home Page */
     .home{
         margin:10px 20px  20px;

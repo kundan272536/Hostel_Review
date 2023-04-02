@@ -1,5 +1,17 @@
 <?php
 include('header.php');
+$con=mysqli_connect('localhost','root','','hostel_review');
+if(isset($_POST['submit'])){
+  $name=$_POST['name'];
+  $hostels=$_POST['hostels'];
+  $facility=$_POST['facility'];
+  $rating=$_POST['rating'];
+  $review=$_POST['review'];
+  $query="INSERT INTO feed_back VALUES ('','$name','$hostels','$facility','$rating','$review')";
+  mysqli_query($con,$query);
+  echo "<script>alert('Data inserted Successfully')</script>";
+}
+mysqli_close($con);
 ?>
 <style>
   .hostels-facility img{
@@ -35,6 +47,12 @@ input, select {
   box-shadow: 10px 10px 10px black;
   
 }
+.hov:hover{
+  width: 230px;
+  height: 230px;
+  transition-duration: 0.5s;
+}
+
 </style>
 <div class="hostel-heading">
     <marquee behavior="alphacoders" direction="right">
@@ -112,44 +130,52 @@ input, select {
 <div class="hostels-facility" >
     <div class="row"  > 
     <div class="col-lg-3 col-md-4 col-sm-6" > 
-        <img  src="images/img/electric.png" class="img-fluid" alt="">
+        <img  src="images/img/electric.png" class="img-fluid hov" alt="">
          <p>Electricity Services 24X7</p>
     </div> 
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/router.png" class="img-fluid" alt="">
+        <img src="images/img/router.png" class="img-fluid hov" alt="">
        <p>Wifi Services 24X7</p>    
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/reading.png" class="img-fluid" alt="">
+        <img src="images/img/reading.png" class="img-fluid hov" alt="">
        <p>Well- equipped reading rooms</p>      
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/roomcleaning.png" class="img-fluid" alt="">
+        <img src="images/img/roomcleaning.png" class="img-fluid hov" alt="">
             <p> Room cleaning Services</p>  
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/visitor.png" class="img-fluid" alt=""> 
+        <img src="images/img/visitor.png" class="img-fluid hov" alt=""> 
             <p> Visitors & Guest Room </p>    
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/saloon.png" class="img-fluid" alt="">
+        <img src="images/img/saloon.png" class="img-fluid hov" alt="">
          <p> Saloon Services</p>      
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/mess.png" class="img-fluid" alt="">
+        <img src="images/img/mess.png" class="img-fluid hov" alt="">
           <p>Mess Services </p>      
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/canteen.png" class="img-fluid" alt="">
+        <img src="images/img/canteen.png" class="img-fluid hov" alt="">
           <p>Night Canteen & Tuck Shops</p> 
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/lift.png" class="img-fluid" alt="">
+        <img src="images/img/lift.png" class="img-fluid hov" alt="">
           <p>Lift Services</p>     
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6">
-        <img src="images/img/gym.png" class="img-fluid" alt="">
+        <img src="images/img/gym.png" class="img-fluid hov" alt="">
          <p>Gym Services</p>    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="images/img/b-warden.png" class="img-fluid hov" alt="">
+         <p>Warden</p>    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="images/img/dispencary.png" class="img-fluid hov" alt="">
+         <p>Dispencary</p>    
     </div>
     </div>  
  </div>
@@ -175,23 +201,24 @@ input, select {
               </select><br>
               <label for="">Facility:</label>
               <select name="facility" id="">
-                <option value="">Electricity</option>
-                <option value="">Wifi</option>
-                <option value="">Reading Room</option>
-                <option value="">Room Cleaning</option>
-                <option value="">Guest Room</option>
-                <option value="">Saloon</option>
-                <option value="">Mess</option>
-                <option value="">Canteen</option>
-                <option value="">Lift</option>
-                <option value="">Gym</option>
-                <option value="">Warden</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Wifi">Wifi</option>
+                <option value="Reading Room">Reading Room</option>
+                <option value="Room Cleaning">Room Cleaning</option>
+                <option value="Guest Room">Guest Room</option>
+                <option value="Saloon">Saloon</option>
+                <option value="Mess">Mess</option>
+                <option value="Canteen">Canteen</option>
+                <option value="Lift">Lift</option>
+                <option value="Gym">Gym</option>
+                <option value="Warden">Warden</option>
+                <option value="Dispencary">Dispencary</option>
               </select><br>
               <label for="rating">Rating:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="">Review:</label>
-              <input type="text" placeholder="write your review" required><br>
-              <button type="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;">Submit</button>
+              <input type="text" name="review" placeholder="write your review" required><br>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;">Submit</button>
             </form>
           </div>
         </div>

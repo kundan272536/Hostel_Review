@@ -15,12 +15,21 @@ mysqli_close($con);
  ?>
 
 <style>
+
+  /*facility images*/
   .hostels-facility img{
     border-radius: 50%;
     border: 2px solid black;
     background-color: #EEF1FF;
     box-shadow: 0px 8px 10px black;
   }
+  .hov:hover{
+  width: 230px;
+  height: 230px;
+  transition-duration: 0.5s;
+}
+
+/*lable*/
   label, input, select {
   display: inline-block;
   vertical-align: middle;
@@ -45,11 +54,9 @@ input, select {
   height: 400px;
   width: 400px;
   color: white;
-  box-shadow: 10px 10px 10px black;
-
-
- 
+  box-shadow: 10px 10px 10px black; 
 }
+
 </style>
 <div class="hostel-heading">
   <marquee behavior="" direction="">
@@ -115,45 +122,53 @@ input, select {
      <div class="hostels-facility">
         <div class="row"> 
         <div class="col-lg-3 col-md-4 col-sm-6" > 
-            <img  src="images/img/electric.png" class="img-fluid" alt="">
+            <img  src="images/img/electric.png" class="img-fluid hov" alt="">
              <p>Electricity Services 24X7</p>
         </div> 
         <div class="col-lg-3 col-md-4 col-sm-6"style="">
-            <img src="images/img/router.png" class="img-fluid" alt="">
+            <img src="images/img/router.png" class="img-fluid hov" alt="">
            <p>Wifi Services 24X7</p>    
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/reading.png" class="img-fluid" alt="">
+            <img src="images/img/reading.png" class="img-fluid hov" alt="">
            <p>Well- equipped reading rooms</p>      
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/roomcleaning.png" class="img-fluid" alt="">
+            <img src="images/img/roomcleaning.png" class="img-fluid hov" alt="">
                 <p> Room cleaning Services</p>  
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/visitor.png" class="img-fluid" alt=""> 
+            <img src="images/img/visitor.png" class="img-fluid hov" alt=""> 
                 <p> Visitors & Guest Room </p>    
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/saloon.png" class="img-fluid" alt="">
+            <img src="images/img/saloon.png" class="img-fluid hov" alt="">
              <p> Saloon Services</p>      
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/mess.png" class="img-fluid" alt="">
+            <img src="images/img/mess.png" class="img-fluid hov" alt="">
               <p>Mess Services </p>      
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/canteen.png" class="img-fluid" alt="">
+            <img src="images/img/canteen.png" class="img-fluid hov" alt="">
               <p>Night Canteen & Tuck Shops</p> 
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/lift.png" class="img-fluid" alt="">
+            <img src="images/img/lift.png" class="img-fluid hov" alt="">
               <p>Lift Services</p>     
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <img src="images/img/gym.png" class="img-fluid" alt="">
+            <img src="images/img/gym.png" class="img-fluid hov" alt="">
              <p>Gym Services</p>    
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="images/img/g-warden.png" class="img-fluid hov" alt="">
+         <p>Gym Services</p>    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <img src="images/img/dispencary.png" class="img-fluid hov" alt="">
+         <p>Dispencary</p>    
+    </div>
         </div>  
      </div>
      <div class="rating">
@@ -186,6 +201,7 @@ input, select {
                 <option value="Lift">Lift</option>
                 <option value="Gym">Gym</option>
                 <option value="Warden">Warden</option>
+                <option value="Dispencary">Dispencary</option>
               </select><br>
               <label for="rating">Rating:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>

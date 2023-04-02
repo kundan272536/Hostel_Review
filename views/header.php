@@ -37,19 +37,19 @@ if(!isset($_SESSION['username'])){
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.php">Home</a>
+        <li class="nav-item nav-text">
+          <a class="nav-link active " aria-current="page" href="home.php">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.php">About</a>
+        <li class="nav-item nav-text">
+          <a class="nav-link " href="about.php">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hostels.php">Hostels</a>
+        <li class="nav-item nav-text">
+          <a class="nav-link " href="hostels.php">Hostels</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-text">
           <a class="nav-link "href="contact.php">Contact</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-text">
           <a class="nav-link "href="logout.php">Logout</a>
         </li>
       </ul>
