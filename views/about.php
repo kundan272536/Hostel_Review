@@ -1,46 +1,70 @@
 <?php
 include('header.php');
 ?>
-<div id="about">
-  <div class="row">
-    <div class="col-lg-6">
-      <img  src="images/img7.jpg" class="img-fluid" alt="" style="margin: 20px;">
-    </div>
-    <div class="col-lg-6 pt-4 pt-lg-0 content text-justify ">
-      <p class="paragraph">
-        Chandigarh University, Punjab enjoys high standing among many national rating
-        services that evaluate quality of education, research activity, affordability
-        and athletic excellence.These rankings recognize not only CU as a whole, but
-        also our many respected schools and departments.Chandigarh University, Punjab 
-        is proud to be recognized by the organizations and publications listed below
-        for our excellence in education.<br><br>
-        The National Institutional Ranking Framework has ranked Chandigarh University 
-        48 in the overall rankings, 29 in the universities rankings, 45 in the
-         engineering category, 40 in the management category, 37 in the pharmacy 
-         category, and 19 in the architecture category, as per the rankings released in July 2022.
+<style>
+  .paragraph-1{
 
-      </p>
-    </div>
-    <div class="col-lg-6">
-      <img src="images/img4.avif" class="img-fluid" alt="" style="margin: 20px;">
-    </div>
-    <div class="col-lg-6 pt-4 pt-lg-0 content text-justify ">
-      <p class="paragraph">The students of Chandigarh University joined hands with the NID Foundation 
-        and created a Guinness World Record for the largest human image of a waving 
-        flag. The pictures of the same were shared by Union Minister Meenakshi Lekhi.<br><br>
-        The nation is gearing up for the 75th Independence Day on August 15. People 
-        and various organisations have already started celebrating the occasion in 
-        their own ways. While some people are hoisting the Tricolour in their homes, 
-        others are marking the day on a larger scale. Well, the students of Chandigarh 
-        University and volunteers from the NID foundation came together to form the 
-        largest human image of a waving flag. And, they even managed to create a record 
-        for that. Yes, you read that right.
-      </p>
-    </div>
-      
+        border-radius: 10px;
+        margin: 20px;
+        margin-top: 40px;
+        border: 2px solid black;
+        text-align: justify;
+        font-size: large;
+        font-style:oblique;
+        padding: 80px;
+        box-shadow: 10px 10px 10px black;       
+        }
+        .paragraph-2{
+          border-radius: 10px;
+        margin: 20px;
+        margin-top: 40px;
+        border: 2px solid black;
+        text-align: justify;
+        font-size: large;
+        font-style:oblique;
+        padding: 80px;
+        box-shadow: 10px 10px 10px black;       
+        }
+        img{
+          border-radius: 5px;
+        }
+</style>
+<div class="row">
+  <div class="col col-lg-6">
+   <img src="images/img2.jpg" alt="" height="500px" width="700px">
   </div>
-
+  <div class="col col-lg-6">
+    <div class="paragraph-1">
+    <p>
+  Chandigarh University is a private university located in Mohali, Punjab, India.
+  It was established in the year 2012 and has since become one of the fastest-growing 
+  universities in India.The university offers a wide range of undergraduate, 
+  postgraduate, and doctoral programs in various fields such as engineering, management, 
+  law, hospitality, and many more.It is spread over 200 acres of land and has 
+  state-of-the-art infrastructure, including well-equipped labs, libraries, sports 
+  facilities, and hostels.
+  </p>
+    </div>
+  </div>
+  <div class="col col-lg-6">
+    <div class="paragraph-2">
+    <p>
+    Chandigarh University has a highly qualified and experienced faculty who are
+     committed to providing quality education to their students.The university 
+     has collaborations with several reputed international universities, which 
+     offer opportunities for students to study abroad and gain international exposure.
+     It has a strong industry interface, which enables students to gain practical 
+     knowledge and experience through internships and placements.Chandigarh University 
+     has received several accolades and awards for its outstanding contribution to the 
+     field of education.
+  </p>
+    </div>
+  </div>
+  <div class="col col-lg-6">
+    <img src="images/img3.jpg" alt="" height="500px" width="700px">
+  </div>
 </div>
+
 <?php
 include('footer.php');
 ?>

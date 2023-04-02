@@ -1,20 +1,19 @@
 <?php
+include("header.php");
 $con=mysqli_connect("localhost","root","","hostel_review");
-if(isset($_REQUEST["submit"])){
-  $name=$_REQUEST["name"];
-  $hostels=$_REQUEST["hostels"];
-  $facility=$_REQUEST["facility"];
-  $rating=$_REQUEST["rating"];
-  $review=$_REQUEST["review"];
-  $query="INSERT INTO feed_back VALUES ('','$name','$hostels','$facility','$rating','$review')";
-  mysqli_query($con,$query);
+if(isset($_POST['submit'])){
+  $name=$_POST["name"];
+  $hostels=$_POST["hostels"];
+  $facility=$_POST["facility"];
+  $rating=$_POST["rating"];
+  $review=$_POST["review"];
+$query="INSERT INTO feed_back VALUES (' ','$name','$hostels','$facility','$rating','$review')";
+mysqli_query($con,$query);
   echo "<script>alert('Data Inserted Successfully');</script>";
 }
 mysqli_close($con);
-?>
-<?php
-include("header.php");
-?>
+ ?>
+
 <style>
   .hostels-facility img{
     border-radius: 50%;
@@ -53,30 +52,12 @@ input, select {
 }
 </style>
 <div class="hostel-heading">
-    <h1>Hostels is the Best Place for Students</h1>
+  <marquee behavior="" direction="">
+  <h1>Hostels is the Best Place for Students</h1>
+  </marquee>
 </div>
 <div class="girls-hostels">
 <div class="row" >
-    <!-- <div class="col-lg-4 col-md-6 col-sm-12 ">
-       <img src="/images/shukhna-a.jpg" class="img-fluid" alt="" >
-       <p>Sukhna Hostel-A</p>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 ">
-        <img src="/images/shukhna-b.jpg" class="img-fluid" alt="" >
-         <p>Sukhna Hostel-B</p>
-     </div>
-     <div class="col-lg-4 col-md-6 col-sm-12 ">
-        <img src="/images/tagore.jpg" class="img-fluid" alt="" >
-        <p>Tagore Hostel</p>
-     </div>
-     <div class="col-lg-4 col-md-6 col-sm-12 ">
-        <img src="/images/lc.jpg" class="img-fluid" alt="" >
-        <p>Le-Corbusier Hostel</p>
-     </div>
-     <div class="col-lg-4 col-md-6 col-sm-12 ">
-        <img src="/images/shivalik.jpg" class="img-fluid" alt="">
-        <p>Shivalik Hostel</p>
-     </div> -->
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
           <img src="images/shukhna-a.jpg" class="card-img-top" alt="..." >
@@ -178,39 +159,39 @@ input, select {
      <div class="rating">
           <div class="girls-rating">
             <h3>Review Form</h3>
-            <form action="" method="post">
+            <form action=" " method="post">
               <label for="name">Name:</label>
               <input type="text" placeholder="enter your name" name="name" required ><br>
               <label for="hostels">Hostels:</label>
               <select name="hostels" id="" >
-              <option value="" >Shukhna-A</option>
-              <option value="" >Shukhna-B</option>
-              <option value="" >Tagore</option>
-              <option value="" >Shivalik</option>
-              <option value="" >LC-A</option>
-              <option value="" >LC-B</option>
-              <option value="" >LC-C</option>
-              <option value="" >LC-D</option>
+              <option value="Shukhna-A" >Shukhna-A</option>
+              <option value="Shukhna-B" >Shukhna-B</option>
+              <option value="Tagore" >Tagore</option>
+              <option value="Shivalik" >Shivalik</option>
+              <option value="LC-A" >LC-A</option>
+              <option value="LC-B" >LC-B</option>
+              <option value="LC-C" >LC-C</option>
+              <option value="LC-D" >LC-D</option>
               </select><br>
               <label for="facility">Facility:</label>
               <select name="facility" id="" >
-                <option value="">Electricity</option>
-                <option value="">Wifi</option>
-                <option value="">Reading Room</option>
-                <option value="">Room Cleaning</option>
-                <option value="">Guest Room</option>
-                <option value="">Saloon</option>
-                <option value="">Mess</option>
-                <option value="">Canteen</option>
-                <option value="">Lift</option>
-                <option value="">Gym</option>
-                <option value="">Warden</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Wifi">Wifi</option>
+                <option value="Reading Room">Reading Room</option>
+                <option value="Room Cleaning">Room Cleaning</option>
+                <option value="Guest Room">Guest Room</option>
+                <option value="Saloon">Saloon</option>
+                <option value="Mess">Mess</option>
+                <option value="Canteen">Canteen</option>
+                <option value="Lift">Lift</option>
+                <option value="Gym">Gym</option>
+                <option value="Warden">Warden</option>
               </select><br>
               <label for="rating">Rating:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="review">Review:</label>
               <input type="text" placeholder="write your review" name="review" required ><br>
-              <button type="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;" value="submit">Submit</button>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;" value="submit">Submit</button>
             </form>
           </div>
         </div>
