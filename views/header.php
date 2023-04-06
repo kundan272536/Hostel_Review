@@ -23,6 +23,11 @@ if(!isset($_SESSION['username'])){
 <link rel="stylesheet" href="style.css">
 
 </head>
+<style>
+  #navbarNav{
+    margin-left: 70%;
+   }
+</style>
 <body >
     <!---Nav-Bar-->
    
@@ -36,7 +41,7 @@ if(!isset($_SESSION['username'])){
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav nav-text">
         <li class="nav-item nav-text">
           <a class="nav-link active " aria-current="page" href="home.php">Home</a>
         </li>

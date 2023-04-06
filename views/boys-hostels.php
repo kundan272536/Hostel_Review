@@ -7,10 +7,12 @@ if(isset($_POST['submit'])){
   $facility=$_POST['facility'];
   $rating=$_POST['rating'];
   $review=$_POST['review'];
-  $query="INSERT INTO feed_back VALUES ('','$name','$hostels','$facility','$rating','$review')";
+  $query="INSERT INTO boys_feed_back VALUES ('','$name','$hostels','$facility','$rating','$review')";
   mysqli_query($con,$query);
   echo "<script>alert('Data inserted Successfully')</script>";
 }
+$retrieve="SELECT * FROM boys_feed_back";
+$result=mysqli_query($con,$retrieve);
 mysqli_close($con);
 ?>
 <style>
@@ -33,17 +35,14 @@ input, select {
 }
 .rating{
   background-color: #E3DFFD;
-  padding: 100px;
+  padding: 10px;
  
 }
 .boys-rating{
   position: relative;
-  left: 70%;
   border: 2px solid black;
   border-radius: 10px;
-  height: 400px;
-  width: 400px;
-  color: white;
+  
   box-shadow: 10px 10px 10px black;
   
 }
@@ -181,23 +180,27 @@ input, select {
  </div>
 </div>
 <div class="rating">
-          <div class="boys-rating">
+ 
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="boys-rating">
+    <h3>Review Form</h3>
             <form action="" method="post">
               <label for="">Name: </label>
               <input type="text" name="name" placeholder="enter your name" required><br>
               <label for="">Hostels:</label>
               <select name="hostels" id="">
-              <option value="">Nek Chand-1</option>
-              <option value="">Nek Chand-2</option>
-              <option value="">Nek Chand-3</option>
-              <option value="">Nek Chand-4</option>
-              <option value="">Nek Chand-5</option>
-              <option value="">Nek Chand-6</option>
-              <option value="">Zakir-A</option>
-              <option value="">Zakir-B</option>
-              <option value="">Zakir-C</option>
-              <option value="">Zakir-B</option>
-              <option value="">Govind</option>
+              <option value="Nek Chand-1">Nek Chand-1</option>
+              <option value="Nek Chand-2">Nek Chand-2</option>
+              <option value="Nek Chand-3">Nek Chand-3</option>
+              <option value="Nek Chand-4">Nek Chand-4</option>
+              <option value="Nek Chand-5">Nek Chand-5</option>
+              <option value="Nek Chand-6">Nek Chand-6</option>
+              <option value="Zakir-A">Zakir-A</option>
+              <option value="Zakir-B">Zakir-B</option>
+              <option value="Zakir-C">Zakir-C</option>
+              <option value="Zakir-D">Zakir-D</option>
+              <option value="Govind">Govind</option>
               </select><br>
               <label for="">Facility:</label>
               <select name="facility" id="">
@@ -218,8 +221,40 @@ input, select {
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="">Review:</label>
               <input type="text" name="review" placeholder="write your review" required><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;">Submit</button>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;">Submit</button>
             </form>
+         </div>
+        </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="data-fetch">
+          <div class="card-body">
+          <table class="table table-bordered text-center">
+          <tr class="bg-dark text-white">
+            <td>Name</td>
+            <td>Hostels</td>
+            <td>Facility</td>
+            <td>Rating</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <?php
+            while($row=mysqli_fetch_assoc($result))
+            {
+              ?>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['hostels'];?></td>
+            <td><?php echo $row['facility'];?></td>
+            <td><?php echo $row['rating'];?></td>
+            <td><?php echo $row['review'];?></td>
+            </tr>
+            <?php
+            }
+            ?>
+          </table>
+          </div>
+          </div> 
+        </div>
+        </div>         
           </div>
         </div>
 <?php

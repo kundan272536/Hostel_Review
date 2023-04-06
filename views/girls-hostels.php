@@ -7,13 +7,14 @@ if(isset($_POST['submit'])){
   $facility=$_POST["facility"];
   $rating=$_POST["rating"];
   $review=$_POST["review"];
-$query="INSERT INTO feed_back VALUES (' ','$name','$hostels','$facility','$rating','$review')";
+$query="INSERT INTO girls_feed_back VALUES (' ','$name','$hostels','$facility','$rating','$review')";
 mysqli_query($con,$query);
   echo "<script>alert('Data Inserted Successfully');</script>";
 }
+$retrieve="SELECT * FROM girls_feed_back";
+$result=mysqli_query($con,$retrieve);
 mysqli_close($con);
  ?>
-
 <style>
 
   /*facility images*/
@@ -42,18 +43,14 @@ input, select {
   border-radius: 5px;
 }
 .rating{
-  background-color: #BFACE2;
-  padding: 100px;
+  background-color: #ECF2FF;
+  padding: 10px;
  
 }
 .girls-rating{
   position: relative;
-  left: 70%;
   border: 2px solid black;
-  border-radius: 10px;
-  height: 400px;
-  width: 400px;
-  color: white;
+  border-radius: 10px; 
   box-shadow: 10px 10px 10px black; 
 }
 
@@ -172,13 +169,15 @@ input, select {
         </div>  
      </div>
      <div class="rating">
-          <div class="girls-rating">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="girls-rating">
             <h3>Review Form</h3>
             <form action=" " method="post">
-              <label for="name">Name:</label>
+              <label for="name" >Name:</label>
               <input type="text" placeholder="enter your name" name="name" required ><br>
               <label for="hostels">Hostels:</label>
-              <select name="hostels" id="" >
+              <select name="hostels" id="" required>
               <option value="Shukhna-A" >Shukhna-A</option>
               <option value="Shukhna-B" >Shukhna-B</option>
               <option value="Tagore" >Tagore</option>
@@ -189,7 +188,7 @@ input, select {
               <option value="LC-D" >LC-D</option>
               </select><br>
               <label for="facility">Facility:</label>
-              <select name="facility" id="" >
+              <select name="facility" id="" required >
                 <option value="Electricity">Electricity</option>
                 <option value="Wifi">Wifi</option>
                 <option value="Reading Room">Reading Room</option>
@@ -207,9 +206,41 @@ input, select {
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="review">Review:</label>
               <input type="text" placeholder="write your review" name="review" required ><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;height:40px;margin-left: 95px;" value="submit">Submit</button>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;" value="submit">Submit</button>
             </form>
           </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="data-fetch">
+          <div class="card-body">
+          <table class="table table-bordered text-center">
+          <tr class="bg-dark text-white">
+            <td>Name</td>
+            <td>Hostels</td>
+            <td>Facility</td>
+            <td>Rating</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <?php
+            while($row=mysqli_fetch_assoc($result))
+            {
+              ?>
+            <td><?php echo $row['name'];?></td>
+            <td><?php echo $row['hostels'];?></td>
+            <td><?php echo $row['facility'];?></td>
+            <td><?php echo $row['rating'];?></td>
+            <td><?php echo $row['review'];?></td>
+            </tr>
+            <?php
+            }
+            ?>
+          </table>
+          </div>
+          </div> 
+        </div>
+      </div>
+          
         </div>
      <?php
      include("footer.php");

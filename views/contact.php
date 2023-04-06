@@ -62,6 +62,10 @@ include("header.php");
             margin-bottom: 0;
             border: 2px solid black;
         }
+        .hov:hover{
+            height: 500px;
+            width: 750px;
+        }
         .left-paragraph{
          margin: 20px;  
          margin-left: 80px; 
@@ -121,8 +125,8 @@ include("header.php");
 <div class="gallery">
     <div class="row">
      <div class="col col-sm-6 col-lg-6 col-md-6">
-     <div class="g-img-1">
-     <img src="images/g-img-1.jpg" alt="" width="700" height="400">
+     <div class="g-img-1 ">
+     <img src="images/g-img-1.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
      <div class="col col-sm-6 col-lg-6 col-md-6">
@@ -148,13 +152,13 @@ include("header.php");
         </div>
      </div>
      <div class="col col-sm-6 col-lg-6 col-md-6">
-     <div class="g-img-2">
-     <img src="images/g-img-3.jpg"   alt="" width="700" height="400">
+     <div class="g-img-2 ">
+     <img src="images/g-img-3.jpg" class="hov"  alt="" width="700" height="400">
     </div>
      </div>
      <div class="col col-sm-6 col-lg-6 col-md-6">
-     <div class="g-img-3">
-    <img src="images/g-img-4.jpg" alt="" width="700" height="400">
+     <div class="g-img-3 ">
+    <img src="images/g-img-4.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
      <div class="col col-sm-6 col-lg-6 col-md-6">
@@ -180,8 +184,8 @@ include("header.php");
         </div>
      </div>
      <div class="col col-sm-6 col-lg-6 col-md-6">
-     <div class="g-img-4">
-    <img src="images/g-img-6.jpg" alt="" width="700" height="400">
+     <div class="g-img-4 hov">
+    <img src="images/g-img-6.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
     </div>    

@@ -12,10 +12,7 @@ body{
        top: 0;
        width: 100%;
     }
-    .nav-text:hover{
-        clear: blue;
-        size: 50px;
-    }
+    
     /* Home Page */
     .home{
         margin:10px 20px  20px;
