@@ -23,6 +23,22 @@ include("header.php");
         color: black;
         height: 100%;
     }
+    .right-side{
+        color:red;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    /* .left-side img{
+        transform: scale(0.5);
+    } */
+    /* .left-side{
+        border: 2px solid black;
+        height: 400px;
+        width: 400px;
+        margin-top: -400px;
+    } */
     form {
 			background-color: transparent;
 			opacity: 0.8;
@@ -30,7 +46,8 @@ include("header.php");
 			border-radius: 10px;
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 		}
-		input {
+		input,select {
+            width: 500px;
 			padding: 10px;
 			margin: 10px;
 			border-radius: 5px;
@@ -40,7 +57,9 @@ include("header.php");
 			font-size: 16px;
 			color: #333;
 		}
-        
+        label{
+            margin-left: -25%;
+        }
         .g-img-1{
             margin:20px;
             margin-bottom: 0;
@@ -61,10 +80,6 @@ include("header.php");
             margin:20px;
             margin-bottom: 0;
             border: 2px solid black;
-        }
-        .hov:hover{
-            height: 500px;
-            width: 750px;
         }
         .left-paragraph{
          margin: 20px;  
@@ -99,37 +114,39 @@ include("header.php");
         }
 </style>
 <div class="contact-page">
-    <div class="left-side">
-     <img src="images/simg1.png" alt="">
-    </div>
-    <div class="right-side">
+    <div class="row">
+      
+      <div class="col-lg-12 col-md-12 col-sm-12 right-side">
+      <!-- <div class="right-side"> -->
     <form action=" " method="post">
 		<h2>Contact Us</h2>
-		<label for="fname">FName:</label>
+		<label for="fname">First-Name</label><br>
 		<input type="text" id="name" name="fname" required><br>
-        <label for="lname">LName:</label>
+        <label for="lname">Last-Name</label><br>
         <input type="text" id="name" name="lname" required><br>
-        <label for="phonenumber">Mobile:</label>
+        <label for="phonenumber">Mobile-No</label><br>
         <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required><br>
-		<label for="email">Email:</label>
+		<label for="email">Email</label><br>
 		<input type="email" id="email" name="email" required><br>
-        <label for="male">Gender: </label>
+        <label for="male">Gender</label><br>
         <select name="gender" id="">
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select><br>
-		<button type="submit" name="submit" class="btn btn-primary btn-large" value="submit">Submit</button>
+		<button type="submit" name="submit" class="btn btn-primary btn-large" value="submit" style="width: 300px;">Submit</button>
 	</form>
-    </div>
+    <!-- </div> -->
+      </div>
+    </div>  
 </div>
 <div class="gallery">
     <div class="row">
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class=" col-lg-6 col-md-6 col-sm-12 ">
      <div class="g-img-1 ">
      <img src="images/g-img-1.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class=" col-lg-6 col-md-6 col-sm-12">
         <div class="right-paragraph">
         <p>One important aspect of degree completion is creating a plan to 
             finish your coursework and meet all the requirements for 
@@ -140,7 +157,7 @@ include("header.php");
             goals, even if you face challenges along the way.</p>
         </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="left-paragraph">
         <p>Degree completion refers to the process of finishing a degree program
              that you have started. This can be a bachelor's degree, a master's 
@@ -151,17 +168,17 @@ include("header.php");
              for career advancement, personal growth, and intellectual stimulation.</p>
         </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
      <div class="g-img-2 ">
      <img src="images/g-img-3.jpg" class="hov"  alt="" width="700" height="400">
     </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
      <div class="g-img-3 ">
     <img src="images/g-img-4.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="right-paragraph">
         <p>Chandigarh University is a private university located in the city of 
             Chandigarh, India. It was established in 2012 and is recognized by 
@@ -173,7 +190,7 @@ include("header.php");
             programs.</p>
         </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="left-paragraph">
         <p>Chandigarh University is known for its state-of-the-art infrastructure, 
             modern facilities, and highly experienced faculty. The university has 
@@ -183,13 +200,14 @@ include("header.php");
             exposure and exchange programs.</p>
         </div>
      </div>
-     <div class="col col-sm-6 col-lg-6 col-md-6">
+     <div class="col-lg-6 col-md-6 col-sm-12">
      <div class="g-img-4 hov">
     <img src="images/g-img-6.jpg" class="hov" alt="" width="700" height="400">
     </div>
      </div>
     </div>    
 </div>
+
 <?php
 include("footer.php");
 ?>

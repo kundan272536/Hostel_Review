@@ -43,7 +43,7 @@ body{
   <div class="container">
     <div class="col-lg-6">
         <form action="registration.php" method="post" autocomplete="off">
-          <h2>Signin</h2>
+          <h2>Password Recover</h2>
           <div class="form-group">
             <label for=""> User Name</label>
             <input type="text" name="user" class="form-control"   placeholder="enter your uid..." required>

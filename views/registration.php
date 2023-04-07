@@ -18,7 +18,7 @@ if($num==1){
     echo "Duplicates data";
 }
 else{
-    $qy="insert into signin(name,password) values('$name','$pass')";
+    $qy="INSERT INTO signin(name,password) VALUE('$name','$pass')";
     mysqli_query($con,$qy);
 }
 ?>

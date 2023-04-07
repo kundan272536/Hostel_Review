@@ -47,6 +47,7 @@ body{
         <a href="signin.php" >
           <button  class="btn btn-lg btn-primary">Signin</button>
         </a>
+        <p>Password Recover <a href="recover_password.php">Click Here</a> </p>
         </div>    
 </div>
 </div>

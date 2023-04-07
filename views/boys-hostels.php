@@ -29,7 +29,7 @@ mysqli_close($con);
   font-size: 20px;
 }
 input, select {
-  width: 250px;
+  width: 350px;
   height: 40px;
   border-radius: 5px;
 }
@@ -49,6 +49,8 @@ input, select {
 .hov:hover{
   width: 230px;
   height: 230px;
+  background-color: #B9E9FC;
+  border-color: #675D50;
   transition-duration: 0.5s;
 }
 
@@ -122,7 +124,6 @@ input, select {
          </div>
     </div>
 </div>
-
 <div class="boys-hostels">
 <!--Hostel Fasility-->
 <h1>Facilities at Hostels</h1>
@@ -221,7 +222,7 @@ input, select {
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="">Review:</label>
               <input type="text" name="review" placeholder="write your review" required><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 250px;">Submit</button>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 350px;margin-left: 90px;">Submit</button>
             </form>
          </div>
         </div>

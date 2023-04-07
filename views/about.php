@@ -9,9 +9,11 @@ include('header.php');
         margin-top: 40px;
         border: 2px solid black;
         text-align: justify;
-        font-size: large;
+        font-size: 16px;
         font-style:oblique;
         padding: 80px;
+        color: #2F3C7E;
+        background-color: #FBEAEB;
         box-shadow: 10px 10px 10px black;       
         }
         .paragraph-2{
@@ -20,10 +22,17 @@ include('header.php');
         margin-top: 40px;
         border: 2px solid black;
         text-align: justify;
-        font-size: large;
+        font-size: 16px;
         font-style:oblique;
         padding: 80px;
+        color:#2F3C7E ;
+        background-color: #FBEAEB;
         box-shadow: 10px 10px 10px black;       
+        }
+        .hov:hover{
+          font-size: 22px;
+          color:white ;
+          background-color:#8AAAE5  ;
         }
         img{
           border-radius: 5px;
@@ -34,8 +43,8 @@ include('header.php');
    <img src="images/img2.jpg" alt="" height="500px" width="700px">
   </div>
   <div class="col col-lg-6">
-    <div class="paragraph-1">
-    <p>
+    <div class="paragraph-1 hov">
+    <p class="">
   Chandigarh University is a private university located in Mohali, Punjab, India.
   It was established in the year 2012 and has since become one of the fastest-growing 
   universities in India.The university offers a wide range of undergraduate, 
@@ -47,8 +56,8 @@ include('header.php');
     </div>
   </div>
   <div class="col col-lg-6">
-    <div class="paragraph-2">
-    <p>
+    <div class="paragraph-2 hov">
+    <p class="">
     Chandigarh University has a highly qualified and experienced faculty who are
      committed to providing quality education to their students.The university 
      has collaborations with several reputed international universities, which 

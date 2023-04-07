@@ -106,60 +106,20 @@ body{
         font-size: large;
         font-style:oblique;
     }
-    /*Contact page */
-    .contact-page{
-        margin-bottom: 0%;
-        display: flex;
-        flex-direction: row;
-    }
-    .left-side{
-        background-color: #EFFFFD;
-        border-radius: 10px;
-        transform: scale(0.7);
-        border: 2px solid #FFFBF5;
-         margin-top: -150px; 
-        margin-left: -100px;
-        margin-right: 150px;
-        box-shadow: 10px 10px 10px 12px rgb(72, 68, 68);
-    }
-    .right-side{
-        /* border: 5px solid white; */
-        background-color: #ECF2FF;
-        border-radius: 10px;
-        height: 70%;
-        width: 50%;
-        margin-top:15%;
-        margin-right: 10%;
-        box-shadow: 10px 10px 5px 10px rgb(240, 236, 236);
-
-    }
+    /*Contact page*/
+   
     /*Footer Section*/
     footer{
-        /* position: fixed; */
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-       background-color:black;
-        text-align: center;
-        bottom: 10px;
-        width: 100%;
+        
+       background-color:#67536F;
+        text-align: justify;
+        /* width: 100%; */
         color: white;  
     }
-    .social-img{
-        /* text-align: center; */
-        margin-left: 30%;
-    }
+   
     .f-img{
         height: 50px;
         width: 50px;
         margin: 5px;
     }
-    /* .details{
-        margin-left: 50%;
-    } */
-    /*Login and Signin Page*/
-    /* #signin-page button{
-        height: 20px;
-        width: 200px;
-    } */
     

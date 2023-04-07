@@ -10,8 +10,8 @@ else{
 mysqli_select_db($con,'hostel_review');
 $name=$_POST['user'];
 $pass=$_POST['password'];
-$q="select * from signin where name='$name' && password='$pass'";
-$result=mysqli_query($con,$q);
+$qy="SELECT  * FROM signin WHERE name='$name' && password='$pass'";
+$result=mysqli_query($con,$qy);
 $num=mysqli_num_rows($result);
 if($num==1){
     $_SESSION['username']=$name;
