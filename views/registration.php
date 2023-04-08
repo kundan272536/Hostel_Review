@@ -11,10 +11,10 @@ else{
 mysqli_select_db($con,'hostel_review');
 $name=$_POST['user'];
 $pass=$_POST['password'];
-$quer="select * from signin where name='$name' && password='$pass'";
+$quer="SELECT * FROM signin WHERE name='$name' && password='$pass'";
 $result=mysqli_query($con,$quer);
 $num=mysqli_num_rows($result);
-if($num==1){
+if($num>0){
     echo "Duplicates data";
 }
 else{

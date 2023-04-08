@@ -17,7 +17,7 @@ include("header.php");
 ?>
 <style>
     .contact-page{
-        background-image: url('images/img9.jpg');
+        background-image: url(images/img9.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         color: black;
@@ -28,6 +28,7 @@ include("header.php");
         padding: 20px;
         font-size: 20px;
         font-weight: bold;
+       
        
     }
     /* .left-side img{
@@ -114,28 +115,25 @@ include("header.php");
         }
 </style>
 <div class="contact-page">
-    <div class="row">
-      
-      <div class="col-lg-12 col-md-12 col-sm-12 right-side">
-      <!-- <div class="right-side"> -->
-    <form action=" " method="post">
-		<h2>Contact Us</h2>
-		<label for="fname">First-Name</label><br>
-		<input type="text" id="name" name="fname" required><br>
-        <label for="lname">Last-Name</label><br>
-        <input type="text" id="name" name="lname" required><br>
-        <label for="phonenumber">Mobile-No</label><br>
-        <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required><br>
-		<label for="email">Email</label><br>
-		<input type="email" id="email" name="email" required><br>
-        <label for="male">Gender</label><br>
-        <select name="gender" id="">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select><br>
-		<button type="submit" name="submit" class="btn btn-primary btn-large" value="submit" style="width: 300px;">Submit</button>
-	</form>
-    <!-- </div> -->
+    <div class="row">  
+      <div class="col-lg-12 col-md-12 col-sm-12 right-side" >
+      <form action=" " method="post">
+    <h2>Contact Us</h2>
+    <label for="fname">First-Name</label><br>
+    <input type="text" id="name" name="fname" required><br>
+    <label for="lname">Last-Name</label><br>
+    <input type="text" id="name" name="lname" required><br>
+    <label for="phonenumber">Mobile-No</label><br>
+    <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="male">Gender</label><br>
+    <select name="gender" id="">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br>
+    <button type="submit" name="submit" class="btn btn-primary btn-large" value="submit" style="width: 300px;">Submit</button>
+</form>
       </div>
     </div>  
 </div>

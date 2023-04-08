@@ -12,8 +12,10 @@ include('header.php');
         font-size: 16px;
         font-style:oblique;
         padding: 80px;
-        color: #2F3C7E;
-        background-color: #FBEAEB;
+        /* color: #2F3C7E; */
+        color: black;
+        /* background-color: #FBEAEB; */
+        background-color: #daf0e6;
         box-shadow: 10px 10px 10px black;       
         }
         .paragraph-2{
@@ -25,7 +27,8 @@ include('header.php');
         font-size: 16px;
         font-style:oblique;
         padding: 80px;
-        color:#2F3C7E ;
+        /* color:#2F3C7E ; */
+        color: black;
         background-color: #FBEAEB;
         box-shadow: 10px 10px 10px black;       
         }
