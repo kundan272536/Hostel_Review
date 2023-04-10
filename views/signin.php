@@ -37,7 +37,6 @@ body{
           }
 </script>  
   </head>
-  
 <body>
   <div id="signin-page">
   <div class="container">
@@ -58,8 +57,6 @@ body{
         </form>
         </div>
       </div> 
-  </div>
-   
-      
+  </div>     
 </body>
 </html>

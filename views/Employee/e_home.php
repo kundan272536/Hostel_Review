@@ -1,9 +1,9 @@
 <?php
-include("header.php");
+include('e_header.php');
 ?>
 <style>
     .upper-part{
-        background-image: url(images/back-img2.jpg);
+        background-image: url(../images/back-img2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin: 2px;
@@ -26,10 +26,10 @@ include("header.php");
   <h1>Welcome To Chandigarh University</h1>
 </marquee>
 </div>
-<div class="home">
+<div class="home"> 
 <div class="row upper-part" >
     <div class="col-lg-6 col-md-6 col-sm-12 chancellor-image">
-        <img src="images/chancellor.jpg" alt="">
+        <img src="../images/chancellor.jpg" alt="">
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 text-chancelor">
      <p>"I have myself faced financial hurdles while 
@@ -39,7 +39,7 @@ include("header.php");
         <h2>Satnam Singh Sandhu</h2>
         <h3>Chancellor of Chandigarh University</h3>
     </div>
-    </div> 
+    </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,7 +48,7 @@ include("header.php");
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/img6.jpg" class="d-block w-100"   alt="...">
+          <img src="../images/img6.jpg" class="d-block w-100"   alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Welcome To Chandigarh Universiy</h5>
             <p>Best private universiy in Punjab.<br>The university was established on 
@@ -56,14 +56,14 @@ include("header.php");
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/img2.jpg" class="d-block w-100"   alt="...">
+          <img src="../images/img2.jpg" class="d-block w-100"   alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Chandigarh University has been accredited 'A+' by NAAC in 2019.</h5>
             <p></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/img1.jpeg" class="d-block w-100" alt="...">
+          <img src="../images/img1.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Chandigarh University offers undergraduate, 
@@ -83,8 +83,11 @@ include("header.php");
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    
+    
   </div> 
 
+
 <?php
-include("footer.php");
+include('e_footer.php');
 ?>

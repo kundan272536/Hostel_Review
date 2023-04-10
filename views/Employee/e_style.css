@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    background-size: 100% 100%;
+    font-family:"Montesrrat";
+    font-weight: bold;
+    
+    }
+    /*Navbar section*/
+    header{
+        overflow: hidden;
+       background-color: #EFFFFD;
+       top: 0;
+       width: 100%;
+    }
+    
+    /* Home Page */
+    .home{
+        margin:10px 20px  20px;
+    }
+    .home img{
+        height: 700px;
+    }
+    .heading{
+        margin: 20px;
+    }
+    .reg-log{
+        /* border-radius: 10px ; */
+        border-style: inset;
+        margin: 20px;
+    }
+    .tab{
+        /* border-radius: 10px ; */
+        border: 2px solid black;
+        width: 300px;
+        position: relative;
+        margin-left: 40%;
+    }
+    /*Form*/
+     .form{
+        padding: 20px;
+        background-color: #E1FFEE;
+    }
+    .card{
+        margin-left: 50%;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .container{
+        margin-top: 0px;
+    }
+    /*About Page*/
+    
+    
+  
+    
+   
+    /*Footer Section*/
+    footer{
+        
+       background-color:#67536F;
+        text-align: justify;
+        color: white;  
+    }
+   
+    .f-img{
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+    /*Boys Hostels review*/
+    /* #boys-hostels-review img{
+      border-radius: 50%;
+    } */

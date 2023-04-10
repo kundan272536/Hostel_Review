@@ -23,12 +23,10 @@ body{
 .btn{
   margin: 4px;
   width: 280px;
-  /* margin-left: 30%; */
 }
 </style>
 </head>
 <body>
- 
   <div class="container">
       <div class="row ">
         <div class="col-lg-6">

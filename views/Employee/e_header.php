@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header('location:login.php');
+    header('location:../login.php');
 }
 ?>
 <!DOCTYPE html>
@@ -15,17 +15,17 @@ if(!isset($_SESSION['username'])){
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
   <!--Logo Image-->
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
   <!--Bootstrap Link-->  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <!--Css StyleSheet Link-->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="e_style.css">
 
 </head>
 <style>
   #navbarNav{
-    margin-left: 60%;
+    margin-left: 55%;
    }
 </style>
 <body >
@@ -36,26 +36,26 @@ if(!isset($_SESSION['username'])){
 
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand" style="margin-left: 30px;" href="#"><img src="images/cu-logo2.png" height="60px" width="110px" alt=""></a>
+    <a class="navbar-brand" style="margin-left: 30px;" href="#"><img src="../images/cu-logo2.png" height="60px" width="110px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav-text">
         <li class="nav-item nav-text">
-          <a class="nav-link active " aria-current="page" href="home.php">Home</a>
+          <a class="nav-link active " aria-current="page" href="e_home.php">Home</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link " href="about.php">About</a>
+          <a class="nav-link " href="e_about.php">About</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link " href="hostels.php">Hostels</a>
+          <a class="nav-link " href="boys-hostels-review.php">Boys-Hostels-Review</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link "href="contact.php">Contact</a>
+          <a class="nav-link "href="girls-hostels-review.php">Girls-Hostels-Review</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link "href="logout.php">Logout</a>
+          <a class="nav-link "href="e_logout.php">Logout</a>
         </li>
       </ul>
     </div>
