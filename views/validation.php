@@ -23,7 +23,7 @@ if($first_character=='S'||'s'){
         header('Location:signin.php');
     }
 }
-if($first_character=='E'||'e'){
+elseif($first_character=='E'||'e'){
     $qy="SELECT  * FROM esignin WHERE name='$name' && password='$pass'";
 $result=mysqli_query($con,$qy);
 $num=mysqli_num_rows($result);
@@ -35,7 +35,7 @@ else{
     header('Location:signin.php');
 }
 }
-// else{
-//     echo"<scripts>'You are not the right person'</scripts>";
-// }
+else{
+    echo"<scripts>'You are not the right person'</scripts>";
+}
 ?>

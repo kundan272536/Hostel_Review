@@ -25,7 +25,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <style>
   #navbarNav{
-    margin-left: 60%;
+    margin-left: 65%;
    }
 </style>
 <body >

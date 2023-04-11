@@ -2,7 +2,7 @@
 include("header.php");
 ?>
 <style>
-    .upper-part{
+     .upper-part{
         background-image: url(images/back-img2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,8 +17,27 @@ include("header.php");
         font-size: 30px;
         text-align: justify;
         padding: 120px;
-        /* line-height: 40px; */
-        /* background: transparent; */
+        
+    }
+    .text-chancelor{
+      background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+      border-radius: 25%;
+      padding: 20px;
+    }
+    h2{
+     color: yellow;
+    }
+    h3{
+      color: red;
+    }
+    .heading{
+      font-size: 20px;
+      /* margin: 10px; */
+      padding: 5px 0px;
+      color: red;
+      background: rgb(33,210,246);
+        background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(148,232,249,1) 18%, rgba(230,246,162,1) 66%, rgba(114,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
+    
     }
 </style>
 <div class="heading">
@@ -83,8 +102,19 @@ include("header.php");
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div> 
+    <div class="col">
+      <marquee behavior="" direction="">
+        <img src="images/company/Cognizant.png" alt="">
+        <img src="images/company/amazon.png" alt="">
+        <img src="images/company/Cognizant.png" alt="">
+        <img src="images/company/Cognizant.png" alt="">
+        <img src="images/company/Cognizant.png" alt="">
+        <img src="images/company/Cognizant.png" alt="">
+        <img src="images/company/Cognizant.png" alt="">
 
+      </marquee>
+    </div>
+  </div> 
 <?php
 include("footer.php");
 ?>

@@ -6,7 +6,7 @@
 
     }
    .contact-details p{
-    padding-left: 130px;
+    padding-left: 150px;
     text-align: justify;
     margin-top: 5px;
     line-height: 5px;
