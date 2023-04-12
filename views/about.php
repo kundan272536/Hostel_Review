@@ -81,7 +81,6 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
 </div>
 </div>
 
-
 <?php
 include('footer.php');
 ?>
