@@ -20,26 +20,15 @@ include("header.php");
         background-image: url(images/img9.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        color: black;
         height: 100%;
     }
     .right-side{
-        color:red;
+        color:orange;
         padding: 20px;
-        font-size: 20px;
-        font-weight: bold;
-       
-       
+        font-size: 25px;
+        font-weight: bold;   
     }
-    /* .left-side img{
-        transform: scale(0.5);
-    } */
-    /* .left-side{
-        border: 2px solid black;
-        height: 400px;
-        width: 400px;
-        margin-top: -400px;
-    } */
+    
     form {
 			background-color: transparent;
 			opacity: 0.8;

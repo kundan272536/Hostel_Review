@@ -1,12 +1,12 @@
 <?php
 session_start();
 $con=mysqli_connect('localhost','root');
-if($con){
-    echo "Connection successfully";
-}
-else{
-    echo "Connection Failed";
-}
+// if($con){
+//     echo "Connection successfully";
+// }
+// else{
+//     echo "Connection Failed";
+// }
 mysqli_select_db($con,'hostel_review');
 $name=$_POST['user'];
 $pass=$_POST['password'];
@@ -23,17 +23,17 @@ if($first_character=='S'||'s'){
         header('Location:signin.php');
     }
 }
-elseif($first_character=='E'||'e'){
+else if($first_character=='E'||'e'){
     $qy="SELECT  * FROM esignin WHERE name='$name' && password='$pass'";
-$result=mysqli_query($con,$qy);
-$num=mysqli_num_rows($result);
-if($num==1){
+    $result=mysqli_query($con,$qy);
+    $num=mysqli_num_rows($result);
+    if($num==1){
     $_SESSION['username']=$name;
-header('Location:Employee/e_home.php');
-}
-else{
+    header('Location:Employee/e_home.php');
+    }
+    else{
     header('Location:signin.php');
-}
+   }
 }
 else{
     echo"<scripts>'You are not the right person'</scripts>";

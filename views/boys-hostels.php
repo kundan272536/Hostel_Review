@@ -149,6 +149,9 @@ mysqli_close($con);
 <div>
   <h5>If you want give feedback <a href="boys-review.php">click here</a> </h5>
 </div>
+<div class="menu">
+      <h5>Form related to mess menu <a href="menu.php">click here</a></h5>
+    </div>
 <div class="rating">
   <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
