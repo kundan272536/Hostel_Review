@@ -20,7 +20,6 @@ mysqli_close($con);
   vertical-align: middle;
   margin: 10px;
   font-size: 20px;
- 
 }
 input, select {
   width: 350px;
