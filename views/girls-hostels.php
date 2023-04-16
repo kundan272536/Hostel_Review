@@ -66,7 +66,7 @@ input, select {
 <div class="row" >
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
-          <img src="images/shukhna-a.jpg" class="card-img-top" alt="..." >
+          <img src="images/girls/shukhna-a.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">Shukhna-A</h5>
             <p class="card-text" style="text-align: justify;">Our hostels have a homely feel, it is the replication of that feeling you have when you are at your own home</p>
@@ -76,7 +76,7 @@ input, select {
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
-          <img src="images/shukhna-b.jpg" class="card-img-top" alt="..." >
+          <img src="images/girls/shukhna-b.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">Shukhna-B</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -86,7 +86,7 @@ input, select {
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
-          <img src="images/shivalik.jpg" class="card-img-top" alt="..." >
+          <img src="images/girls/shivalik.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">Shivalik</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -96,7 +96,7 @@ input, select {
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
-          <img src="images/lc.jpg" class="card-img-top" alt="..." >
+          <img src="images/girls/lc.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">LE Corbusier</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,7 +106,7 @@ input, select {
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="card" style="margin-left: 50px;margin-top: 5px;" >
-          <img src="images/tagore.jpg" class="card-img-top" alt="..." >
+          <img src="images/girls/tagore.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">Tagore</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

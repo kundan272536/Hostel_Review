@@ -6,16 +6,18 @@ if(isset($_POST['submit'])){
     $items2=$_POST['items2'];
     $items3=$_POST['items3'];
     $items4=$_POST['items4'];
-    $query="INSERT INTO breakfast VALUE('','$items1','$items2','$items3','$items4')";
+    $items5=$_POST['items5'];
+    $query="INSERT INTO breakfast VALUE('','$items1','$items2','$items3','$items4','$items5')";
     mysqli_query($con,$query);
-    echo "<script>alert('Welcome to Main Course Page')</script>";
+    echo "<script>alert('Welcome to Main Course Page');</script>";
     header('Location:lunch.php');
+
 }
 mysqli_close($con);
 ?>
 <style>
     body{
-        background-image: url(images/food-items-2.avif);
+        background-image: url(images/breakfast.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
@@ -27,7 +29,7 @@ mysqli_close($con);
         border-radius: 10px;
         background: transparent;
         border-color: blue;
-        color: white;
+        /* color: white; */
     }
 </style>
 <div id="menu">
@@ -67,6 +69,15 @@ mysqli_close($con);
           <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
           <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
          </select><br>
+         <label for="">Select Fifth Items</label><br>
+         <select name="items5" id="">
+          <option value="Plain_Paratha">Plain_Paratha</option>
+          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
+          <option value="Cornflakes_milk">Cornflakes_milk</option>
+          <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
+          <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
+         </select><br>
+         
          <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
     </form>
 </div>
