@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 mysqli_close($con);
 ?>
 <style>
-    body{
+    #menu{
         background-image: url(images/lunch.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,13 +28,14 @@ mysqli_close($con);
         border-radius: 10px;
         background: transparent;
         border-color: blue;
-        /* color: white; */
     }
 </style>
 <div id="menu">
 <h1>Suggest the Mess Menu</h1>
-<div>
-    <form action="" method="post">
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="lunch">
+        <form action="" method="post">
         <h3>Select Lunch Menu</h3>
         <label for="">Select First Items</label><br>
          <select name="items1" id="">
@@ -75,10 +76,11 @@ mysqli_close($con);
           <option value="Cornflakes_milk">Cornflakes_milk</option>
           <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
           <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
-         </select><br>
-         
+         </select><br>         
          <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
     </form>
+        </div>
+    </div>   
 </div>
 </div>
 <?php
