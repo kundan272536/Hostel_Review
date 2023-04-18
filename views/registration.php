@@ -36,6 +36,18 @@ elseif($first_character=="E"){
         mysqli_query($con,$qy);
     }
 }
+elseif($first_character=="A"){
+    $quer="SELECT * FROM asignin WHERE name='$name' && password='$pass'";
+    $result=mysqli_query($con,$quer);
+    $num=mysqli_num_rows($result);
+    if($num>0){
+        echo "Duplicates data";
+    }
+    else{
+        $qy="INSERT INTO asignin(name,password) VALUE('$name','$pass')";
+        mysqli_query($con,$qy);
+    }
+}
 else{
     echo "<script>alert('You are not the right person');</script>";   
 }

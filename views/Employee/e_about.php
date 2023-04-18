@@ -19,7 +19,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         color: black;
         background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
         box-shadow: 10px 10px 10px black;
-               
+        border-top-left-radius: 80px; 
+        border-bottom-right-radius: 80px;
         }
         .paragraph-2{
           border-radius: 10px;
@@ -32,7 +33,9 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         padding: 80px;
         color: black;
         background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
-        box-shadow: 10px 10px 10px black;       
+        box-shadow: 10px 10px 10px black; 
+        border-top-left-radius: 80px; 
+        border-bottom-right-radius: 80px;      
         }
         .hov:hover{
           font-size: 22px;
@@ -42,11 +45,13 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         }
         img{
           border-radius: 5px;
+          border-top-right-radius: 70px; 
+        border-bottom-left-radius: 80px;
         }
 </style>
 <div class="about">
 <div class="row">
-  <div class="col col-lg-6">
+  <div class="col col-lg-6 ">
    <img src="../images/img2.jpg" alt="" height="500px" width="700px">
   </div>
   <div class="col col-lg-6">

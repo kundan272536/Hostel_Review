@@ -1,12 +1,11 @@
 <?php
-include('header.php');
+include('a_header.php')
 ?>
 <style>
   .about{
     background: rgb(33,210,246);
-background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(246,204,162,1) 0%, rgba(148,232,249,1) 30%, rgba(192,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
- 
-  }
+background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(245,25,14,1) 0%, rgba(3,6,6,1) 0%, rgba(246,245,175,1) 0%, rgba(185,255,252,0.5355392156862745) 17%, rgba(236,248,250,1) 67%, rgba(137,231,227,0.7736344537815126) 85%, rgba(236,163,170,1) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%);
+}
   .paragraph-1{
 
         border-radius: 10px;
@@ -19,9 +18,10 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         padding: 80px;
         color: black;
         background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
-        box-shadow: 10px 10px 10px black; 
+        box-shadow: 10px 10px 10px black;
         border-top-left-radius: 80px; 
-        border-bottom-right-radius: 80px;       
+        border-bottom-right-radius: 80px;
+               
         }
         .paragraph-2{
           border-radius: 10px;
@@ -34,25 +34,26 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         padding: 80px;
         color: black;
         background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
-        box-shadow: 10px 10px 10px black;  
+        box-shadow: 10px 10px 10px black; 
         border-top-left-radius: 80px; 
-        border-bottom-right-radius: 80px;    
+        border-bottom-right-radius: 80px;      
         }
         .hov:hover{
           font-size: 22px;
           color:white ;
           background-color:#8AAAE5  ;
+
         }
         img{
           border-radius: 5px;
           border-top-left-radius: 80px; 
-        border-bottom-right-radius: 80px; 
+        border-bottom-right-radius: 80px;
         }
 </style>
 <div class="about">
 <div class="row">
   <div class="col col-lg-6">
-   <img src="images/img2.jpg" alt="" height="500px" width="700px">
+   <img src="../images/img2.jpg" alt="" height="500px" width="700px">
   </div>
   <div class="col col-lg-6">
     <div class="paragraph-1 hov">
@@ -82,11 +83,12 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
     </div>
   </div>
   <div class="col col-lg-6">
-    <img src="images/img3.jpg" alt="" height="500px" width="700px">
+    <img src="../images/img3.jpg" alt="" height="500px" width="700px">
   </div>
 </div>
+
 </div>
 
 <?php
-include('footer.php');
+include('a_footer.php');
 ?>

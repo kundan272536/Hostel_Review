@@ -28,9 +28,9 @@
  </div>
   <div class="col col-lg-4 col-md-4 col-sm-12 social" >
     <div class="social">
-    <a href="https://www.instagram.com/chandigarhuniversity/"><img class="f-img" src="images/img/instagram.png" alt="" ></a>
-      <a href="https://www.facebook.com/chandigarhuniversitygharuan"><img class="f-img" src="images/img/facebook.png" alt="" ></a>
-      <a href="https://www.linkedin.com/school/chandigarh-university/"><img class="f-img" src="images/img/linkedin.png" alt="" ></a>
+    <a href="https://www.instagram.com/chandigarhuniversity/" target="_blank"><img class="f-img" src="images/img/instagram.png" alt="" ></a>
+      <a href="https://www.facebook.com/chandigarhuniversitygharuan" target="_blank"><img class="f-img" src="images/img/facebook.png" alt="" ></a>
+      <a href="https://www.linkedin.com/school/chandigarh-university/" target="_blank"><img class="f-img" src="images/img/linkedin.png" alt="" ></a>
     </div>
     </div>
     <div class="col col-lg-4 col-md-4 col-sm-12 "style="text-align:center;">

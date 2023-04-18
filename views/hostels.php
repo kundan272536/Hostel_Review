@@ -15,6 +15,8 @@ include("header.php");
     font-size: large;
     font-style:oblique;
     margin-top: 10px;
+    border-top-left-radius: 80px; 
+    border-bottom-right-radius: 80px; 
   }
   .paragraph-2{
     border: 2px solid black;
@@ -31,7 +33,8 @@ include("header.php");
     text-align: justify;
     font-size: large;
     font-style:oblique;
-    
+    border-top-left-radius: 80px; 
+    border-bottom-right-radius: 80px; 
   }
   .paragraph-3{
     color: white;
@@ -47,7 +50,8 @@ include("header.php");
     font-size: large;
     font-style:oblique;
     margin-top: 10px;
-    /* margin-right: 0px; */
+    border-top-left-radius: 80px; 
+    border-bottom-right-radius: 80px; 
   }
   .hostel-heading{
     font-style:oblique;
@@ -57,6 +61,7 @@ include("header.php");
     margin-right: 50px;
     background-color: #d6d4e0;
     box-shadow: 8px 8px 8px 6px #EDF7FA;
+    
 }
 #two-paragraph{
   background-color: #b8a9c9;

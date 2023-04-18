@@ -43,7 +43,7 @@ input, select {
     <h3>Review Form</h3>
             <form action="" method="post">
               <label for="">Name: </label>
-              <input type="text" name="name" placeholder="enter your name" required><br>
+              <input type="text" name="name" placeholder="Enter your name" required><br>
               <label for="">Hostels:</label>
               <select name="hostels" id="">
               <option value="Nek Chand-1">Nek Chand-1</option>
