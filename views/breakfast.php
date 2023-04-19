@@ -11,7 +11,6 @@ if(isset($_POST['submit'])){
     mysqli_query($con,$query);
     echo "<script>alert('Welcome to Main Course Page');</script>";
     header('Location:lunch.php');
-
 }
 mysqli_close($con);
 ?>

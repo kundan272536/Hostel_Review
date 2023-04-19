@@ -1,12 +1,6 @@
 <?php
 session_start();
 $con=mysqli_connect('localhost','root');
-// if($con){
-//     echo "Connection successfully";
-// }
-// else{
-//     echo "Connection Failed";
-// }
 mysqli_select_db($con,'hostel_review');
 $name=$_POST['user'];
 $pass=$_POST['password'];

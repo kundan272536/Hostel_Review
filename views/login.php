@@ -33,7 +33,7 @@ body{
         <form action="validation.php" method="post" autocomplete="off">
           <h2>Login Form</h2>
           <div class="form-group">
-            <label for=""> User Name</label>
+            <label for=""> User Id</label>
             <input type="text" name="user" class="form-control"   placeholder="enter your uid..." required>
           </div>
           <div class="form-group">
@@ -45,7 +45,6 @@ body{
         <a href="signin.php" >
           <button  class="btn btn-lg btn-primary">Signin</button>
         </a>
-        <p>Password Recover <a href="recover_password.php">Click Here</a> </p>
         </div>    
 </div>
 </div>

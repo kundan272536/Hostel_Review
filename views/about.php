@@ -4,7 +4,7 @@ include('header.php');
 <style>
   .about{
     background: rgb(33,210,246);
-background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(246,204,162,1) 0%, rgba(148,232,249,1) 30%, rgba(192,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
+   background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(246,204,162,1) 0%, rgba(148,232,249,1) 30%, rgba(192,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
  
   }
   .paragraph-1{
@@ -43,10 +43,10 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
           color:white ;
           background-color:#8AAAE5  ;
         }
-        img{
+        .about .row img{
           border-radius: 5px;
-          border-top-left-radius: 80px; 
-        border-bottom-right-radius: 80px; 
+          border-top-right-radius: 150px; 
+        border-bottom-left-radius: 150px;
         }
 </style>
 <div class="about">

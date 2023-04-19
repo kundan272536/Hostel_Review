@@ -9,7 +9,8 @@ include("header.php");
         margin: 2px;
     }
     .chancellor-image img{
-        border-radius: 35%;
+        border-top-right-radius: 170px; 
+        border-bottom-left-radius: 150px;
         padding-top: 20px;
     }
     .text-chancelor p{

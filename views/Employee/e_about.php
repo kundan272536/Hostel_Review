@@ -43,10 +43,10 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
           background-color:#8AAAE5  ;
 
         }
-        img{
+        .about .row img{
           border-radius: 5px;
-          border-top-right-radius: 70px; 
-        border-bottom-left-radius: 80px;
+          border-top-right-radius: 150px; 
+        border-bottom-left-radius: 150px;
         }
 </style>
 <div class="about">

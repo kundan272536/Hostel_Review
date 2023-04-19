@@ -55,27 +55,27 @@ mysqli_close($con);
          </select><br>
          <label for="">Select Third Items</label><br>
          <select name="items3" id="">
-          <option value="Masoor_Matar">Masoor_Matar</option>
+          <option value="Mushroom_Matar">Mushroom_Matar</option>
           <option value="Malka_Masoor_Dal">Malka_Masoor_Dal</option>
           <option value="Aloo_Beans">Aloo_Beans</option>
-          <option value="Stuffed_Paratha_Curd">Stuffed_Paratha_Curd</option>
-          <option value="Omlete_Bread_Jam_Butter">Omlete_Bread_Jam_Butter</option>
+          <option value="Stuffed_Paratha_Curd">Raita</option>
+          <option value="Chicken_Biryani">Chicken_Biryani</option>
          </select><br>
          <label for="">Select Fourth Items</label><br>
          <select name="items4" id="">
-          <option value="Plain_Paratha">Plain_Paratha</option>
-          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
-          <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
+          <option value="Kathal_Biryani">Kathal_Biryani</option>
+          <option value="Boondi_Raita">Boondi_Raita</option>
+          <option value="Masroom_Matar">Masroom_Matar</option>
+          <option value="Kadi_Gatta">Kadi_Gatta</option>
+          <option value="Nuterla_Rice">Nuterla_Rice</option>
          </select><br>
          <label for="">Select Fifth Items</label><br>
          <select name="items5" id="">
-          <option value="Plain_Paratha">Plain_Paratha</option>
-          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
-          <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
+          <option value="Kadai_Veg_Rice">Kadai_Veg_Rice</option>
+          <option value="Mix_Raita">Mix_Raita</option>
+          <option value="Salad">Salad</option>
+          <option value="Nutry_Kima">Nutry_Kima</option>
+          <option value="Nutry_Matar">Nutry_Matar</option>
          </select><br>         
          <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
     </form>

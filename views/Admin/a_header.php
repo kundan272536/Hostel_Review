@@ -46,13 +46,13 @@ if(!isset($_SESSION['username'])){
           <a class="nav-link active " aria-current="page" href="a_home.php">Home</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link " href="a_about.php">About</a>
+          <a class="nav-link " href="a_review.php">Review</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link " href="boys-hostels-review.php">Boys-Hostels-Review</a>
+          <a class="nav-link " href="a_suggestion.php">Suggested Menu</a>
         </li>
         <li class="nav-item nav-text">
-          <a class="nav-link "href="girls-hostels-review.php">Girls-Hostels-Review</a>
+          <a class="nav-link "href="a_menu.php">Daily Menu</a>
         </li>
         <li class="nav-item nav-text">
           <a class="nav-link "href="a_logout.php">Logout</a>

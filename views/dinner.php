@@ -1,5 +1,18 @@
 <?php
 include("header.php");
+$con=mysqli_connect('localhost','root','','hostel_review');
+if(isset($_POST['submit'])){
+    $items1=$_POST['items1'];
+    $items2=$_POST['items2'];
+    $items3=$_POST['items3'];
+    $items4=$_POST['items4'];
+    $items5=$_POST['items5'];
+    $query="INSERT INTO dinner VALUE ('','$items1','$items2','$items3','$items4','$items5')";
+    mysqli_query($con,$query);
+    echo "<script>alert('Welcome to Main Course Page');</script>";
+    header("Location:home.php");
+}
+mysqli_close($con);
 ?>
 <style>
     #menu{
@@ -26,43 +39,43 @@ include("header.php");
         <h3>Select The Break Fast Menu</h3>
         <label for="">Select First Items</label><br>
          <select name="items1" id="">
-          <option value="Plain_Paratha">Plain_Paratha</option>
-          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter">Bread_Jam_Butter</option>
-          <option value="Daliya_Boiled_Egg_Bread">Daliya_Boiled_Egg_Bread</option>
+          <option value="Veg_Kofta_Curry">Veg_Kofta_Curry</option>
+          <option value="Dal_Palak">Dal_Palak</option>
+          <option value="Rice">Rice</option>
+          <option value="Chapati">Chapati</option>
+          <option value="Chocolate">Chocolate</option>
          </select><br>
          <label for="">Select Second Items</label><br>
          <select name="items2" id="">
-          <option value="Puri_Sabji">Puri_Sabji</option>
-          <option value="Chhole_Bhature">Chhole_Bhature</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter_Upma">Bread_Jam_Butter_Upma</option>
-          <option value="Daliya_Boiled_Egg_Bread">Daliya_Boiled_Egg_Bread</option>
+          <option value="Chicken_Chilly">Chicken_Chilly</option>
+          <option value="Lobiya_Dal">Lobiya_Dal</option>
+          <option value="White_Chana">White_Chana</option>
+          <option value="Veg_Sambhar">Veg_Sambhar</option>
+          <option value="Halwa">Halwa</option>
          </select><br>
          <label for="">Select Third Items</label><br>
          <select name="items3" id="">
-          <option value="Pav_Bhaji_Milk">Pav_Bhaji_Milk</option>
-          <option value="Chhole_Kulchha">Chhole_Kulchha</option>
-          <option value="Chhole_Bhature">Chhole_Bhature</option>
-          <option value="Stuffed_Paratha_Curd">Stuffed_Paratha_Curd</option>
-          <option value="Omlete_Bread_Jam_Butter">Omlete_Bread_Jam_Butter</option>
+          <option value="Palak_Paneer">Palak_Paneer</option>
+          <option value="Rajma">Rajma</option>
+          <option value="Hara_Kadu">Hara_Kadu</option>
+          <option value="Sabut_Masoor">Sabut_Masoor</option>
+          <option value="Aloo_Gobhi">Aloo_Gobhi</option>
          </select><br>
          <label for="">Select Fourth Items</label><br>
          <select name="items4" id="">
-          <option value="Plain_Paratha">Plain_Paratha</option>
-          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
-          <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
+          <option value="Kerala_Chicken">Kerala_Chicken</option>
+          <option value="Kadai_Chicken">Kadai_Chicken</option>
+          <option value="Kheer">Kheer</option>
+          <option value="Masroom_Matar">Masroom_Matar</option>
+          <option value="Dal_Makhani">Dal_Makhani</option>
          </select><br>
          <label for="">Select Fifth Items</label><br>
          <select name="items5" id="">
-          <option value="Plain_Paratha">Plain_Paratha</option>
-          <option value="Stuffed_Paratha">Stuffed_Paratha</option>
-          <option value="Cornflakes_milk">Cornflakes_milk</option>
-          <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
-          <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
+          <option value="Gulab_Jamun">Gulab_Jamun</option>
+          <option value="Gatta_Curry">Gatta_Curry</option>
+          <option value="Aloo_Cabbage_Matar">Aloo_Cabbage_Matar</option>
+          <option value="Kadai_Paneer">Kadai_Paneer</option>
+          <option value="Nutry_Keema">Nutry_Keema</option>
          </select><br> 
          <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
     </form>

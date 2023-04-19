@@ -33,8 +33,8 @@ include("header.php");
     text-align: justify;
     font-size: large;
     font-style:oblique;
-    border-top-left-radius: 80px; 
-    border-bottom-right-radius: 80px; 
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
   }
   .paragraph-3{
     color: white;
