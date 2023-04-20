@@ -54,8 +54,9 @@ include("header.php");
     border-bottom-right-radius: 80px; 
   }
   .hostel-heading{
+    font-family: fantasy;
     font-style:oblique;
-    color: white;
+    color: red;
     border-radius: 5px;
     margin-left: 50px;
     margin-right: 50px;

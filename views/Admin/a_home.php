@@ -32,6 +32,7 @@ include("a_header.php")
       color: red;
     }
     .heading{
+      font-family: fantasy;
       font-size: 20px;
       margin: 0px 10px;
       padding: 5px;

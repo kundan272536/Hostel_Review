@@ -17,7 +17,7 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         font-style:oblique;
         padding: 80px;
         color: black;
-        background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+        background-color: white;
         box-shadow: 10px 10px 10px black;
         border-top-left-radius: 80px; 
         border-bottom-right-radius: 80px;
@@ -32,7 +32,7 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         font-style:oblique;
         padding: 80px;
         color: black;
-        background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+        background-color:white;
         box-shadow: 10px 10px 10px black; 
         border-top-left-radius: 80px; 
         border-bottom-right-radius: 80px;      
@@ -40,7 +40,7 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         .hov:hover{
           font-size: 22px;
           color:white ;
-          background-color:#8AAAE5  ;
+          background-color:#AAC4FF  ;
 
         }
         .about .row img{

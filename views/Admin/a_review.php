@@ -7,9 +7,27 @@ $gReview="SELECT * FROM girls_feed_back";
 $gResult=mysqli_query($con,$gReview);
 mysqli_close($con);
 ?>
-<div class="review">
-<div class="boys_review">
-    <h3>All Boys` Hostels Reviews</h3>
+<style>
+  #review{
+
+  }
+  #boys_review{
+    background: rgb(33,210,246);
+    background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(3,6,6,1) 0%, rgba(245,25,14,1) 0%, rgba(246,245,175,1) 0%, rgba(185,255,252,0.5355392156862745) 18%, rgba(236,248,250,1) 67%, rgba(137,231,227,0.7736344537815126) 85%, rgba(236,163,170,1) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%);
+  }
+  #girls_review{
+    background: rgb(33,210,246);
+    background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(3,6,6,1) 0%, rgba(245,25,14,1) 0%, rgba(187,239,178,1) 0%, rgba(185,255,252,0.5355392156862745) 18%, rgba(236,248,250,1) 67%, rgba(137,231,227,0.7736344537815126) 85%, rgba(167,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(236,163,170,1) 100%);
+  }
+  h3{
+    font-family: fantasy;
+    color: red;
+  }
+</style>
+
+<div id="review">
+<div id="boys_review">
+    <h3>All Boys` Hostels` Reviews</h3>
     <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
@@ -42,8 +60,8 @@ mysqli_close($con);
         </div>
         </div>    
 </div>
-<div class="girls_review">
-    <h3>All Girls` Hostels Review</h3>
+<div id="girls_review">
+    <h3>All Girls` Hostels` Review</h3>
 <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">

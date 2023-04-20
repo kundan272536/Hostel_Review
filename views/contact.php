@@ -22,13 +22,10 @@ include("header.php");
         background-repeat: no-repeat;
         height: 100%;
     }
-    .right-side{
-        color:orange;
-        padding: 20px;
-        font-size: 25px;
-        font-weight: bold;   
+    h2,label{
+        font-family: fantasy;
+        color: red;
     }
-    
     form {
 			background-color: transparent;
 			opacity: 0.8;
@@ -78,12 +75,14 @@ include("header.php");
          border-radius: 10px;
          height: 400px;
          width: 600px;
-         box-shadow: 10px 10px 10px 12px #DEE5DD;
-         background-color: #f7cac9;
+         box-shadow: 10px 10px 10px 12px black;
+         /* background-color: #f7cac9; */
          text-align: justify;
          font-size: large;
          font-style:oblique;
          padding: 80px;
+         border-top-left-radius: 150px; 
+        border-bottom-right-radius: 150px;
         }
         .right-paragraph{
             margin: 20px;
@@ -92,12 +91,14 @@ include("header.php");
             border-radius: 10px;
             height: 400px;
             width: 600px;
-            box-shadow: 10px 10px 10px 12px #E2DBDF;
-            background-color: #f7786b;
+            box-shadow: 10px 10px 10px 12px black;
+            /* background-color: #f7786b; */
             text-align: justify;
             font-size: large;
             font-style:oblique;
             padding: 80px;
+            border-top-right-radius: 150px; 
+        border-bottom-left-radius: 150px;
         }
         .right-paragraph .p{
             margin: 20px;
@@ -108,17 +109,17 @@ include("header.php");
       <div class="col-lg-12 col-md-12 col-sm-12 right-side" >
       <form action=" " method="post">
     <h2>Contact Us</h2>
-    <label for="fname">First-Name</label><br>
-    <input type="text" id="name" name="fname" required><br>
+    <label for="fname" >First-Name</label><br>
+    <input type="text" id="name" name="fname" required placeholder="Enter your first name"><br>
     <label for="lname">Last-Name</label><br>
-    <input type="text" id="name" name="lname" required><br>
+    <input type="text" id="name" name="lname" required placeholder="Enter your last name"><br>
     <label for="phonenumber">Mobile-No</label><br>
-    <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required><br>
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" required><br>
+    <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required placeholder="Enter your mobile number"><br>
+    <label for="email">Email-Id</label><br>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
     <label for="male">Gender</label><br>
-    <select name="gender" id="">
-        <option value="male">Male</option>
+    <select name="gender" id="" >
+        <option value="male" >Male</option>
         <option value="female">Female</option>
     </select><br>
     <button type="submit" name="submit" class="btn btn-primary btn-large" value="submit" style="width: 300px;">Submit</button>

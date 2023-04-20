@@ -45,6 +45,10 @@ mysqli_close($con);
         font-size: 20px;
         padding: 30px;
     }    
+    h3{
+      font-family: fantasy;
+      color: red;
+    }
 </style>
 <div id="boys-hostels-review">
     <div class="row image-section">

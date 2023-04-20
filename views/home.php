@@ -38,7 +38,7 @@ include("header.php");
       color: red;
       background: rgb(33,210,246);
       background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(148,232,249,1) 18%, rgba(230,246,162,1) 66%, rgba(114,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
-    
+      font-family: fantasy;
     }
 </style>
 <div class="heading">

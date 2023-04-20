@@ -24,7 +24,7 @@ mysqli_close($con);
 <style>
     #girls-hostels-review{  
       background: rgb(33,210,246);
-background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(246,204,162,1) 0%, rgba(148,232,249,1) 30%, rgba(192,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(246,204,162,1) 0%, rgba(148,232,249,1) 30%, rgba(192,110,192,0.7456232492997199) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%, rgba(137,231,227,0.7736344537815126) 100%, rgba(0,212,255,1) 100%);
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -44,6 +44,10 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         font-size: 20px;
         padding: 30px;
     }    
+    h3{
+      font-family: fantasy;
+      color: red;
+    }
 </style>
 <div id="girls-hostels-review">
     <div class="row image-section">
@@ -86,8 +90,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
             </p>
         </div>
     </div>
+    <h3>All review</h3>
     <div class="row">
-        <h3>All review</h3>
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -119,8 +123,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>   
          <!-- Shukhna- A Review   -->
+         <h3>Shukhna-A Review Table</h3>
         <div class="row">
-        <h3>Shukhna-A Review Table</h3>
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -150,8 +154,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!-- Shukhna-B Review-->
-        <div class="row">
         <h3>Shukhna-B Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -181,8 +185,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!-- Tagore Review-->
-        <div class="row">
         <h3>Tagore Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -212,8 +216,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!--LC-A Review-->
-        <div class="row">
         <h3>LC-A Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -243,8 +247,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
            <!--LC-B Review-->
+           <h3>LC-B Review Table</h3>
         <div class="row">
-        <h3>LC-B Review Table</h3>
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -274,8 +278,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!--LC-C Review-->
-        <div class="row">
         <h3>LC-C Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -305,8 +309,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!--LC-D Review-->
-        <div class="row">
         <h3>LC-D Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
@@ -336,8 +340,8 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
         </div>
         </div>
         <!--Shivalik Review-->
-        <div class="row">
         <h3>Shivalik Review Table</h3>
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
           <div class="card-body">
