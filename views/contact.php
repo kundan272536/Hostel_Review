@@ -17,14 +17,14 @@ include("header.php");
 ?>
 <style>
     .contact-page{
-        background-image: url(images/img9.jpg);
+        background-image: url(images/img91.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         height: 100%;
     }
-    h2,label{
+    h2{
         font-family: fantasy;
-        color: red;
+        color: white;
     }
     form {
 			background-color: transparent;
@@ -46,6 +46,10 @@ include("header.php");
 		}
         label{
             margin-left: -25%;
+            font-size:20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-weight: bold;
         }
         .g-img-1{
             margin:20px;
@@ -109,13 +113,13 @@ include("header.php");
       <div class="col-lg-12 col-md-12 col-sm-12 right-side" >
       <form action=" " method="post">
     <h2>Contact Us</h2>
-    <label for="fname" >First-Name</label><br>
+    <label for="fname" >First Name</label><br>
     <input type="text" id="name" name="fname" required placeholder="Enter your first name"><br>
-    <label for="lname">Last-Name</label><br>
+    <label for="lname">Last Name</label><br>
     <input type="text" id="name" name="lname" required placeholder="Enter your last name"><br>
-    <label for="phonenumber">Mobile-No</label><br>
+    <label for="phonenumber">Mobile No</label><br>
     <input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" required placeholder="Enter your mobile number"><br>
-    <label for="email">Email-Id</label><br>
+    <label for="email">Email Id</label><br>
     <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
     <label for="male">Gender</label><br>
     <select name="gender" id="" >

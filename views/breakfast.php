@@ -17,16 +17,18 @@ mysqli_close($con);
 <style>
     
     #menu{
-        background-image: url(images/breakfast.jpg);
+        background-image: url(images/breakfast1.jpg);
         backdrop-filter: blur(5px);
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
     }
     h1{
-        color: #183A1D;
+        font-family: fantasy;
+        color: red;
     }
     h3{
+        font-family: fantasy;
         color: red;
     }
     .menu-heading{

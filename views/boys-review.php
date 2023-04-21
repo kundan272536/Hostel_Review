@@ -22,6 +22,9 @@ mysqli_close($con);
   font-size: 20px;
  
 }
+label{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
 input, select {
   width: 350px;
   height: 40px;
@@ -31,18 +34,17 @@ input, select {
   border-radius: 10px;
   padding-top: 6%;
   padding-bottom: 6%;
-  background-image: url(images/img8.jpg);
+  background-image: url(images/img81.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 </style>
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12">
     <div class="boys-rating">
     <h3>Review Form</h3>
             <form action="" method="post">
-              <label for="">Name: </label>
+              <label for="">Name:</label>
               <input type="text" name="name" placeholder="Enter your name" required><br>
               <label for="">Hostels:</label>
               <select name="hostels" id="">
@@ -72,7 +74,7 @@ input, select {
                 <option value="Gym">Gym</option>
                 <option value="Dispencary">Dispencary</option>
               </select><br>
-              <label for="rating">Rating:</label>
+              <label for="rating">Ratings:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
               <label for="">Review:</label>
               <input type="text" name="review" placeholder="write your review" required><br>

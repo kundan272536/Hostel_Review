@@ -13,6 +13,18 @@ if(isset($_POST['submit'])){
 }
 $retrieve="SELECT * FROM menu";
 $result=mysqli_query($con,$retrieve);
+if(isset($_POST['delete'])){
+    $id=$_POST['id'];
+    $query="DELETE FROM menu WHERE id='$id'";
+    $query_run=mysqli_query($con,$query);
+    if($query_run){
+        echo '<script>alert("Data Deleted Successfully")</script>';
+        header("Location:a_menu.php");
+    }
+    else{
+        echo '<script>alert("Data Deleted Successfully")</script>';
+    }
+}
 mysqli_close($con);
 ?>
 <style>
@@ -29,9 +41,9 @@ h3{
     color: red;
 }
 </style>
+<h3>Add The Mess Menu</h3>
 <div class="menu">
     <div id="update_menu">
-        <h3>Add The Mess Menu</h3>
     <div class="row ">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
@@ -64,7 +76,7 @@ h3{
                     <td><input type="text" name="lunch" required></td>
                     <td><input type="text" name="snacks" required></td>
                     <td><input type="text" name="dinner" required></td>
-                    <td><button type="submit" name="submit">Add</button></td>
+                    <td><button type="submit" name="submit" class="btn btn-md btn-success">ADD</button></td>
                 </form>
             </tr> 
           </table>
@@ -73,8 +85,8 @@ h3{
         </div>
         </div>
     </div>
+    <h3>Regular Mess Menu</h3>
         <div id="mess-menu">
-            <h3>Regular Mess Menu</h3>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="data-fetch">
@@ -99,11 +111,10 @@ h3{
                                     <td><?php echo $row['lunch'];?></td>
                                     <td><?php echo $row['snacks'];?></td>
                                     <td><?php echo $row['dinner'];?></td>
-                                    <td>
-                                       <form action="delete.php" method="post">
-                                       <button type="submit" name="rem" >Remove</button>
-                                       </form>                                     
-                                    </td>
+                                    <form action="" method="post">
+                                        <input type="hidden" name="id" value="<?php echo $row['id']?>">
+                                        <td><button type="submit" name="delete" class="btn btn-danger"  >DELETE</button></td>
+                                    </form>
                                     </tr>
                                     <?php
                                     }?>

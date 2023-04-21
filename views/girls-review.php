@@ -30,9 +30,14 @@ input, select {
   border-radius: 10px;
   padding-top: 6%;
   padding-bottom: 6%;
-  background-image: url(images/img8.jpg);
+  background-image: url(images/img81.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+h3{
+  font-family: fantasy;
+  color: red;
+
 }
 </style>
 <div class="row">
@@ -41,7 +46,7 @@ input, select {
             <h3>Review Form</h3>
             <form action=" " method="post">
               <label for="name" >Name:</label>
-              <input type="text" placeholder="enter your name" name="name" required ><br>
+              <input type="text" placeholder="enter your name" name="name" required style="margin-left: 20px;" ><br>
               <label for="hostels">Hostels:</label>
               <select name="hostels" id="" required>
               <option value="Shukhna-A" >Shukhna-A</option>
@@ -69,10 +74,10 @@ input, select {
                 <option value="Dispencary">Dispencary</option>
               </select><br>
               <label for="rating">Rating:</label>
-              <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
+              <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required style="margin-left: 20px;" ><br>
               <label for="review">Review:</label>
-              <input type="text" placeholder="write your review" name="review" required ><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 350px;margin-left: 90px;" value="submit">Submit</button>
+              <input type="text" placeholder="write your review" name="review" required style="margin-left: 20px;" ><br>
+              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 350px;margin-left: 110px;" value="submit">Submit</button>
             </form>
           </div>
         </div>

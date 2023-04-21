@@ -37,9 +37,9 @@ mysqli_close($con);
     color: red;
   }
 </style>
+<h3>Demanding Breakfast Menu</h3>
 <div id="demand">
     <div id="breakfast">
-        <h3>Demanding Breakfast Menu</h3>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
@@ -72,8 +72,8 @@ mysqli_close($con);
         </div>
         </div>    
     </div>
+    <h3>Demanding Lunch Menu</h3>
     <div id="lunch">
-        <h3>Demanding Lunch Menu</h3>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
@@ -106,8 +106,8 @@ mysqli_close($con);
         </div>
         </div>
     </div>
+    <h3>Demanding Snacks Menu</h3>
     <div id="snacks">
-        <h3>Demanding Snacks Menu</h3>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">
@@ -138,8 +138,8 @@ mysqli_close($con);
         </div>
         </div>
     </div>
+    <h3>Demanding Dinner Menu</h3>
     <div id="dinner">
-        <h3>Demanding Dinner Menu</h3>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">

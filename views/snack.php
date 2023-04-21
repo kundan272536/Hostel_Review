@@ -15,7 +15,7 @@ mysqli_close($con);
 ?>
 <style>
     #menu{
-        background-image: url(images/snacks.jpg);
+        background-image: url(images/snacks1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
