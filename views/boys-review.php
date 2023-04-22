@@ -70,9 +70,10 @@ input, select {
                 <option value="Saloon">Saloon</option>
                 <option value="Mess">Mess</option>
                 <option value="Canteen">Canteen</option>
+                <option value="Laundry">Laundry</option>
                 <option value="Lift">Lift</option>
                 <option value="Gym">Gym</option>
-                <option value="Dispencary">Dispencary</option>
+                <option value="Dispencary">Dispensary</option>
               </select><br>
               <label for="rating">Ratings:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>

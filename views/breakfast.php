@@ -17,7 +17,7 @@ mysqli_close($con);
 <style>
     
     #menu{
-        background-image: url(images/breakfast1.jpg);
+        background-image: url(images/breakfast11.jpg);
         backdrop-filter: blur(5px);
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,7 +25,7 @@ mysqli_close($con);
     }
     h1{
         font-family: fantasy;
-        color: red;
+        color: #F0FF42;
     }
     h3{
         font-family: fantasy;
@@ -39,16 +39,16 @@ mysqli_close($con);
         border-radius: 5px;
     }
     select,button{
-        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
         margin-bottom: 10px;
-        color: #865DFF;
+        color: white;
         font-size: 30px;
         width: 350px;
         height: 60px;
         border-radius: 10px;
         background: transparent;
-        border: 3px solid #C9A7EB;
-        box-shadow: 5px 5px 5px #ECC9EE;       
+        border: 3px solid #070A52;
+        box-shadow: 5px 5px 5px #4F4557;       
 
     }
 </style>
@@ -102,7 +102,7 @@ mysqli_close($con);
           <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
           <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
          </select><br>  
-         <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
+         <button type="submit" name="submit" class="btn btn-lg btn-success">Submit</button>
     </form>
     </div>
     

@@ -21,13 +21,33 @@ mysqli_close($con);
         background-size: cover;
         color: white;
     }
+    h1{
+        font-family: fantasy;
+        color: #3120E0;
+    }
+    h3{
+        font-family: fantasy;
+        color: red;
+    }
+    .menu-heading{
+        margin-left: 38.5%;
+        background-color: #C9EEFF;
+        height: 40px;
+        width: 350px;
+        border-radius: 5px;
+    }
     select,button{
-        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+        color: #16FF00;
+        font-size: 30px;
         width: 350px;
         height: 60px;
         border-radius: 10px;
         background: transparent;
-        border-color: blue;
+        border: 3px solid #070A52;
+        box-shadow: 5px 5px 5px #4F4557;       
+
     }
 </style>
 <div id="menu">
@@ -36,7 +56,11 @@ mysqli_close($con);
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="dinner">
         <form action="" method="post">
-        <h3>Select The Break Fast Menu</h3>
+            <div class="menu-heading">
+                <marquee behavior="" direction="">
+                <h3>Select The Break Fast Menu</h3>
+                </marquee>
+            </div>
         <label for="">Select First Items</label><br>
          <select name="items1" id="">
           <option value="Veg_Kofta_Curry">Veg_Kofta_Curry</option>
