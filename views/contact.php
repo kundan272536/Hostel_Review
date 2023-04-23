@@ -16,11 +16,10 @@ mysqli_close($con);
 include("header.php");
 ?>
 <style>
-    .contact-page{
+    .r-side{
         background-image: url(images/img91.jpg);
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        height: 100%;
     }
     h2{
         font-family: fantasy;
@@ -80,7 +79,6 @@ include("header.php");
          height: 400px;
          width: 600px;
          box-shadow: 10px 10px 10px 12px black;
-         /* background-color: #f7cac9; */
          text-align: justify;
          font-size: large;
          font-style:oblique;
@@ -96,7 +94,6 @@ include("header.php");
             height: 400px;
             width: 600px;
             box-shadow: 10px 10px 10px 12px black;
-            /* background-color: #f7786b; */
             text-align: justify;
             font-size: large;
             font-style:oblique;
@@ -111,7 +108,8 @@ include("header.php");
 <div class="contact-page">
     <div class="row">  
       <div class="col-lg-12 col-md-12 col-sm-12 right-side" >
-      <form action=" " method="post">
+        <div class="r-side">
+        <form action=" " method="post">
     <h2>Contact Us</h2>
     <label for="fname" >First Name</label><br>
     <input type="text" id="name" name="fname" required placeholder="Enter your first name"><br>
@@ -128,6 +126,8 @@ include("header.php");
     </select><br>
     <button type="submit" name="submit" class="btn btn-primary btn-large" value="submit" style="width: 300px;">Submit</button>
 </form>
+        </div>
+     
       </div>
     </div>  
 </div>

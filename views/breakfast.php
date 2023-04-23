@@ -41,7 +41,8 @@ mysqli_close($con);
     select,button{
         font-family: 'Times New Roman', Times, serif;
         margin-bottom: 10px;
-        color: white;
+        font-weight: bold;
+        color: #D6ED17FF;
         font-size: 30px;
         width: 350px;
         height: 60px;

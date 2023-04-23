@@ -39,6 +39,7 @@ mysqli_close($con);
     select,button{
         font-family: 'Times New Roman', Times, serif;
         margin-bottom: 10px;
+        font-weight: bold;
         color: #16FF00;
         font-size: 30px;
         width: 350px;
@@ -58,7 +59,7 @@ mysqli_close($con);
         <form action="" method="post">
             <div class="menu-heading">
                 <marquee behavior="" direction="">
-                <h3>Select The Break Fast Menu</h3>
+                <h3>Select The Dinner Menu</h3>
                 </marquee>
             </div>
         <label for="">Select First Items</label><br>
@@ -101,7 +102,7 @@ mysqli_close($con);
           <option value="Kadai_Paneer">Kadai_Paneer</option>
           <option value="Nutry_Keema">Nutry_Keema</option>
          </select><br> 
-         <button type="submit" name="submit" class="btn btn-lg btn-primary">Submit</button>
+         <button type="submit" name="submit" class="btn btn-lg btn-success">Submit</button>
     </form>
         </div>
     </div>

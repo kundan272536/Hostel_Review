@@ -25,6 +25,11 @@ input, select {
   width: 350px;
   height: 40px;
   border-radius: 5px;
+  box-shadow: 10px 10px 10px black;         
+}
+label{
+  font-weight: bold;
+  color: blue;
 }
 .girls-rating{
   border-radius: 10px;
@@ -36,7 +41,7 @@ input, select {
 }
 h3{
   font-family: fantasy;
-  color: red;
+  color: #F97B22;
 
 }
 </style>
@@ -71,7 +76,7 @@ h3{
                 <option value="Lift">Lift</option>
                 <option value="Gym">Gym</option>
                 <option value="Laundry">Laundry</option>
-                <option value="Dispencary">Dispensary</option>
+                <option value="Dispencary">Dispenary</option>
               </select><br>
               <label for="rating">Rating:</label>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required style="margin-left: 20px;" ><br>

@@ -37,9 +37,9 @@ mysqli_close($con);
     }
     select,button{
         font-family: 'Times New Roman', Times, serif;
-        /* font-style: italic; */
+        font-weight: bold;
         margin-bottom: 10px;
-     color: #16FF00;
+     color: #42EADDFF;
         font-size: 30px;
         width: 350px;
         height: 60px;
@@ -58,7 +58,7 @@ mysqli_close($con);
         <form action="" method="post">
             <div class="menu-heading">
                 <marquee behavior="" direction="">
-                <h3>Select The Break Fast Menu</h3>
+                <h3>Select The Snack Menu</h3>
                 </marquee>
             </div>
         <label for="">Select First Items</label><br>

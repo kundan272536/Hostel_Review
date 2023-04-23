@@ -25,7 +25,7 @@ include("header.php");
     padding: 30px;
     margin-left: 10%;
     box-shadow: 10px 10px 10px 12px rgb(72, 68, 68);
-    background-color: #f4a688;
+    background-color: white;
     color: rgb(11, 10, 10);
     margin-left: 35px;
     margin-right: 0px;

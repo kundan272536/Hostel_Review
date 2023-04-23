@@ -39,8 +39,9 @@ mysqli_close($con);
     select,button{
         font-family: 'Times New Roman', Times, serif;
         /* font-style: italic; */
+        font-weight: bold;
         margin-bottom: 10px;
-     color: #16FF00;
+        color: #00A4CCFF;
         font-size: 30px;
         width: 350px;
         height: 60px;
