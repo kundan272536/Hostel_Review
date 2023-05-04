@@ -71,19 +71,11 @@ body{
     /*Girls-Hostels*/
     .girls-hostels{
       margin: 20px;
-      
       border-radius: 20px;
     }
-    
-    .girls-hostels img:hover{
-        opacity: 0.3;
-    }
-    
     /*Hostels Facility*/
     .hostels-facility{
-        margin: 20px;
-        /* border-radius: 10px; */
-        /* color: #E1FFEE; */
+        margin: 20px;    
     }
     .hostels-facility img{
         height: 200px;

@@ -12,8 +12,8 @@
 .container{
   color: white;
   position: absolute;
-  top: 35%;
-  left: 37%;
+  top: 25%;
+  left: 39%;
   height: 300px;
   width: 308px
 }
@@ -26,8 +26,8 @@ input{
 }
 .image{
   position: relative;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
   margin-top: 0px;
   background-size: cover;
 }

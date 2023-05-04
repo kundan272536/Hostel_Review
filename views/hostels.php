@@ -71,7 +71,7 @@ include("header.php");
 }
 
 </style>
-<div class="hostel-heading">
+<div class="hostel-heading" data-aos="zoom-out-up">
   <marquee behavior="" direction="right">
   <h1>Welcome to Chandigarh University Hostels</h1>
   </marquee>
@@ -97,7 +97,7 @@ include("header.php");
      </div>           -->
      
      <div class="col-lg-6 col-md-6 col-sm-6">
-      <div class="card" style="margin-left: 50px;" >
+      <div class="card" style="margin-left: 50px;" data-aos="fade-down">
         <img src="images/hs10.jpg" class="card-img-top" alt="..." >
         <div class="card-body">
           <h5 class="card-title">Girls Hostels</h5>
@@ -107,7 +107,7 @@ include("header.php");
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">
-      <div class="card" style="margin-left: 50px;" >
+      <div class="card" style="margin-left: 50px;" data-aos="fade-up" >
         <img src="images/hs9.jpg" class="card-img-top" alt="..." >
         <div class="card-body">
            <h5 class="card-title">Boys Hostels</h5>
@@ -119,7 +119,8 @@ include("header.php");
     </div> 
 </div>
 <div id="two-paragraph">
-<div class="paragraph-1" >
+<div class="paragraph-1" data-aos="fade-right"
+     data-aos-anchor-placement="center-bottom">
   <p >Hostels are often associated with unforgettable memories. For many travelers,
      hostels offer a unique opportunity to meet people from different parts of the 
      world and create lasting connections. The shared spaces and communal areas of
@@ -131,7 +132,8 @@ include("header.php");
       are a unique and memorable part of the our life.
      </p>
  </div>
- <div class="paragraph-2"  >
+ <div class="paragraph-2" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
   <p>Chandigarh University Campus has separate hostels for boys and girls with 
      all modern facilities and attached mess. The hostel mess serves fresh and 
      hygienic food. You will be provided with facilities like internet, music 
@@ -142,7 +144,8 @@ include("header.php");
      highly-experienced staff looks after the university assets and ensures that the 
      hostel remains responsive all the time.</p>
  </div>
- <div class="paragraph-3" >
+ <div class="paragraph-3" data-aos="fade-left"
+     data-aos-anchor-placement="center-bottom" >
   
   <p>Chandigarh University hostels offer a home away from home,
 With comfortable living spaces that you can call your own,With 
