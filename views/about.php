@@ -51,10 +51,10 @@ include('header.php');
 </style>
 <div class="about">
 <div class="row">
-  <div class="col col-lg-6">
+  <div class="col col-lg-6" data-aos="flip-left" data-aos-anchor-placement="center-bottom">
    <img src="images/img2.jpg" alt="" height="500px" width="700px">
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
     <div class="paragraph-1 hov">
     <p class="">
   Chandigarh University is a private university located in Mohali, Punjab, India.
@@ -67,7 +67,7 @@ include('header.php');
   </p>
     </div>
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6"data-aos="flip-right" data-aos-anchor-placement="center-bottom">
     <div class="paragraph-2 hov">
     <p class="">
     Chandigarh University has a highly qualified and experienced faculty who are
@@ -81,7 +81,7 @@ include('header.php');
   </p>
     </div>
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6"data-aos="flip-left" data-aos-anchor-placement="center-bottom">
     <img src="images/img3.jpg" alt="" height="500px" width="700px">
   </div>
 </div>

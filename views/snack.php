@@ -1,6 +1,6 @@
 <?php
 include("header.php");
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('connection.php');
 if(isset($_POST['submit'])){
     $items1=$_POST['items1'];
     $items2=$_POST['items2'];

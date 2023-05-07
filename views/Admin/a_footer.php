@@ -1,28 +1,35 @@
 <!--Footer-->
 <style>
-    .social{
-        padding-top: 10px;
+     .social{
+        padding-top: 20px;
         text-align: center;
-
+        margin-top: 30px;
     }
    .contact-details p{
     padding-left: 150px;
     text-align: justify;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 5px;
    }
+   .contact-details{
+   padding-top: 50px;
+  }
    .copy-right{
     text-align: center;
    }
    span{
     color: #B2A4FF;
    }
+   .logo{
+   padding-top: 70px;
+   text-align: center;
+}
 </style>
 </body>
 <footer>
   <div class="row foot">
- <div class="col col-lg-4 col-md-4 col-sm-12 " style="text-align: center;" >
-  <div class="image">
+ <div class="col col-lg-4 col-md-4 col-sm-12 " >
+  <div class="logo">
   <img src="../images/cu-logo2.png" alt="" height="100px" width="300px" >
   </div>
  </div>
@@ -48,4 +55,12 @@
   <p >&#169 2023</p>
   </div>
 </footer>
+<!-- aos js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+   AOS.init({
+      duration:800,
+      delay:300
+   });
+</script>
 </html>

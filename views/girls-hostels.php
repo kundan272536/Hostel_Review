@@ -176,7 +176,7 @@ h3, h1{
     <div class="menu">
       <h4>Form related to mess menu <a href="breakfast.php">click here</a></h4>
     </div>
-    <h3>Regular Mess Menu</h3>
+    <h3 data-aos="fade-down-right" data-aos-anchor-placement="center-bottom">Regular Mess Menu</h3>
     <div class="mess-menu" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -210,7 +210,7 @@ h3, h1{
                 </div>
             </div>
         </div>
-        <h3>All Reviews Given By Girls</h3>
+        <h3 data-aos="fade-down-left" data-aos-anchor-placement="center-bottom">All Reviews Given By Girls</h3>
      <div class="rating" data-aos="flip-left" data-aos-anchor-placement="center-bottom">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">

@@ -1,6 +1,6 @@
 <?php
 include("a_header.php");
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('../connection.php');
 $breakfast="SELECT * FROM breakfast";
 $breakQuery=mysqli_query($con,$breakfast);
 $lunch="SELECT * FROM lunch";
@@ -41,7 +41,7 @@ mysqli_close($con);
 <div id="demand">
     <div id="breakfast">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -75,7 +75,7 @@ mysqli_close($con);
     <h3>Demanding Lunch Menu</h3>
     <div id="lunch">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -109,7 +109,7 @@ mysqli_close($con);
     <h3>Demanding Snacks Menu</h3>
     <div id="snacks">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -141,7 +141,7 @@ mysqli_close($con);
     <h3>Demanding Dinner Menu</h3>
     <div id="dinner">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">

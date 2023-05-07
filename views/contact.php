@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","hostel_review");
+include('connection.php');
 if(isset($_POST['submit'])){
     $fname=$_POST["fname"];
     $lname=$_POST["lname"];
@@ -133,12 +133,12 @@ include("header.php");
 </div>
 <div class="gallery">
     <div class="row">
-     <div class=" col-lg-6 col-md-6 col-sm-12 ">
+     <div class=" col-lg-6 col-md-6 col-sm-12 " data-aos="fade-up-right" data-aos-anchor-placement="center-bottom">
      <div class="g-img-1 ">
-     <img src="images/g-img-1.jpg" class="hov" alt="" width="700" height="400">
+     <img src="images/g-img-1.jpg" alt="" width="700" height="400">
     </div>
      </div>
-     <div class=" col-lg-6 col-md-6 col-sm-12">
+     <div class=" col-lg-6 col-md-6 col-sm-12" data-aos="fade-down-left" data-aos-anchor-placement="center-bottom">
         <div class="right-paragraph">
         <p>One important aspect of degree completion is creating a plan to 
             finish your coursework and meet all the requirements for 
@@ -149,7 +149,7 @@ include("header.php");
             goals, even if you face challenges along the way.</p>
         </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down-right" data-aos-anchor-placement="center-bottom">
         <div class="left-paragraph">
         <p>Degree completion refers to the process of finishing a degree program
              that you have started. This can be a bachelor's degree, a master's 
@@ -160,17 +160,17 @@ include("header.php");
              for career advancement, personal growth, and intellectual stimulation.</p>
         </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-anchor-placement="center-bottom">
      <div class="g-img-2 ">
-     <img src="images/g-img-3.jpg" class="hov"  alt="" width="700" height="400">
+     <img src="images/g-img-3.jpg"   alt="" width="700" height="400">
     </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-right" data-aos-anchor-placement="center-bottom">
      <div class="g-img-3 ">
-    <img src="images/g-img-4.jpg" class="hov" alt="" width="700" height="400">
+    <img src="images/g-img-4.jpg"  alt="" width="700" height="400">
     </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12"data-aos="fade-down-left" data-aos-anchor-placement="center-bottom">
         <div class="right-paragraph">
         <p>Chandigarh University is a private university located in the city of 
             Chandigarh, India. It was established in 2012 and is recognized by 
@@ -182,7 +182,7 @@ include("header.php");
             programs.</p>
         </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down-right" data-aos-anchor-placement="center-bottom">
         <div class="left-paragraph">
         <p>Chandigarh University is known for its state-of-the-art infrastructure, 
             modern facilities, and highly experienced faculty. The university has 
@@ -192,9 +192,9 @@ include("header.php");
             exposure and exchange programs.</p>
         </div>
      </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
+     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-anchor-placement="center-bottom">
      <div class="g-img-4 hov">
-    <img src="images/g-img-6.jpg" class="hov" alt="" width="700" height="400">
+    <img src="images/g-img-6.jpg"  alt="" width="700" height="400">
     </div>
      </div>
     </div>    

@@ -4,7 +4,7 @@ include('e_header.php')
 <style>
   .about{
     background: rgb(33,210,246);
-background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(245,25,14,1) 0%, rgba(3,6,6,1) 0%, rgba(246,245,175,1) 0%, rgba(185,255,252,0.5355392156862745) 17%, rgba(236,248,250,1) 67%, rgba(137,231,227,0.7736344537815126) 85%, rgba(236,163,170,1) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%);
+   background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%, rgba(245,25,14,1) 0%, rgba(3,6,6,1) 0%, rgba(246,245,175,1) 0%, rgba(185,255,252,0.5355392156862745) 17%, rgba(236,248,250,1) 67%, rgba(137,231,227,0.7736344537815126) 85%, rgba(236,163,170,1) 100%, rgba(233,247,159,0.7736344537815126) 100%, rgba(68,147,182,1) 100%);
 }
   .paragraph-1{
 
@@ -51,10 +51,10 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
 </style>
 <div class="about">
 <div class="row">
-  <div class="col col-lg-6 ">
+  <div class="col col-lg-6 " data-aos="flip-right" data-aos-anchor-placement="center-bottom">
    <img src="../images/img2.jpg" alt="" height="500px" width="700px">
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
     <div class="paragraph-1 hov">
     <p class="">
   Chandigarh University is a private university located in Mohali, Punjab, India.
@@ -67,7 +67,7 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
   </p>
     </div>
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
     <div class="paragraph-2 hov">
     <p class="">
     Chandigarh University has a highly qualified and experienced faculty who are
@@ -81,7 +81,7 @@ background: linear-gradient(90deg, rgba(33,210,246,1) 0%, rgba(33,246,244,1) 0%,
   </p>
     </div>
   </div>
-  <div class="col col-lg-6">
+  <div class="col col-lg-6"data-aos="flip-right" data-aos-anchor-placement="center-bottom">
     <img src="../images/img3.jpg" alt="" height="500px" width="700px">
   </div>
 </div>

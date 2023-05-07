@@ -1,6 +1,6 @@
 <?php
 include("a_header.php");
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('../connection.php');
 if(isset($_POST['submit'])){
     $day=$_POST['day'];
     $date=$_POST['date'];
@@ -45,7 +45,7 @@ h3{
 <div class="menu">
     <div id="update_menu">
     <div class="row ">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -88,7 +88,7 @@ h3{
     <h3>Regular Mess Menu</h3>
         <div id="mess-menu">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
                     <div class="data-fetch">
                         <div class="card-body">
                             <table class="table table-bordered text-center">

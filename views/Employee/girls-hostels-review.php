@@ -1,6 +1,6 @@
 <?php
 include('e_header.php');
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('../connection.php');
 $retrieve="SELECT * FROM girls_feed_back";
 $result=mysqli_query($con,$retrieve);
 $sukhna_a="SELECT * FROM girls_feed_back where hostels='Shukhna-A'";
@@ -51,10 +51,10 @@ mysqli_close($con);
 </style>
 <div id="girls-hostels-review">
     <div class="row image-section">
-        <div class="col col-lg-4 col-md-6 col-sm-12 hov ">
+        <div class="col col-lg-4 col-md-6 col-sm-12 hov " data-aos="fade-up-right" data-aos-anchor-placement="center-bottom">
         <img src="../images/girls/shukhna-b.JPG" class="img-thumbnail" alt="Cinque Terre" >
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
             <p>Choosing a University is also about choosing a 
                 new home. We ensure that students dwell in a
                  healthy environment that helps them to grow 
@@ -64,10 +64,10 @@ mysqli_close($con);
                  attached mess.
             </p>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="col col-lg-4 col-md-6 col-sm-12" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
         <img src="../images/girls/shivalik.JPG" class="img-thumbnail" alt="Cinque Terre">
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
             <p>
             The hostel mess serves fresh and hygienic food.
              You will be provided with facilities like internet, 
@@ -77,10 +77,10 @@ mysqli_close($con);
              newspapers, magazines, etc.
             </p>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="col col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <img src="../images/girls/lc.JPG" class="img-thumbnail" alt="Cinque Terre">
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-up-left" data-aos-anchor-placement="center-bottom">
             <p>
             The hostels’ houses have a fully equipped gym and 
             separate courts for Volleyball, BasketBall, and 
@@ -92,7 +92,7 @@ mysqli_close($con);
     </div>
     <h3>All review</h3>
     <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -125,7 +125,7 @@ mysqli_close($con);
          <!-- Shukhna- A Review   -->
          <h3>Shukhna-A Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -156,7 +156,7 @@ mysqli_close($con);
         <!-- Shukhna-B Review-->
         <h3>Shukhna-B Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -187,7 +187,7 @@ mysqli_close($con);
         <!-- Tagore Review-->
         <h3>Tagore Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -218,7 +218,7 @@ mysqli_close($con);
         <!--LC-A Review-->
         <h3>LC-A Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -249,7 +249,7 @@ mysqli_close($con);
            <!--LC-B Review-->
            <h3>LC-B Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -280,7 +280,7 @@ mysqli_close($con);
         <!--LC-C Review-->
         <h3>LC-C Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -311,7 +311,7 @@ mysqli_close($con);
         <!--LC-D Review-->
         <h3>LC-D Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -342,7 +342,7 @@ mysqli_close($con);
         <!--Shivalik Review-->
         <h3>Shivalik Review Table</h3>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">

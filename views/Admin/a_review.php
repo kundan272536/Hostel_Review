@@ -1,6 +1,6 @@
 <?php
 include("a_header.php");
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('../connection.php');
 $bReview="SELECT * FROM boys_feed_back";
 $bResult=mysqli_query($con,$bReview);
 $gReview="SELECT * FROM girls_feed_back";
@@ -26,7 +26,7 @@ mysqli_close($con);
 <div id="review">
 <div id="boys_review">
     <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">
@@ -60,7 +60,7 @@ mysqli_close($con);
 <h3>All Girls` Hostels` Review</h3>
 <div id="girls_review">
 <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12"data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="data-fetch">
           <div class="card-body">
           <table class="table table-bordered text-center">

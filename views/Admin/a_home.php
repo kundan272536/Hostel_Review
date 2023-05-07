@@ -49,10 +49,10 @@ include("a_header.php")
 </div>
 <div class="home"> 
 <div class="row upper-part" >
-    <div class="col-lg-6 col-md-6 col-sm-12 chancellor-image">
+    <div class="col-lg-6 col-md-6 col-sm-12 chancellor-image" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
         <img src="../images/chancellor.jpg" alt="">
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 text-chancelor">
+    <div class="col-lg-6 col-md-6 col-sm-12 text-chancelor" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
      <p>"I have myself faced financial hurdles while 
         pursuing my education and, thus, want every 
         student to have access to education without 

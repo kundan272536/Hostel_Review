@@ -1,6 +1,6 @@
 <?php
 include('e_header.php');
-$con=mysqli_connect('localhost','root','','hostel_review');
+include('../connection.php');
 $retrieve="SELECT * FROM boys_feed_back";
 $result=mysqli_query($con,$retrieve);
 $nc1="SELECT * FROM boys_feed_back where hostels='Nek Chand-1'";
@@ -52,10 +52,10 @@ mysqli_close($con);
 </style>
 <div id="boys-hostels-review">
     <div class="row image-section">
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="col col-lg-4 col-md-6 col-sm-12" data-aos="fade-up-right" data-aos-anchor-placement="center-bottom">
         <img src="../images/boys/b4.JPG" class="img-thumbnail" alt="Cinque Terre" >
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
             <p>Choosing a University is also about choosing a 
                 new home. We ensure that students dwell in a
                  healthy environment that helps them to grow 
@@ -65,10 +65,10 @@ mysqli_close($con);
                  attached mess.
             </p>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="col col-lg-4 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-anchor-placement="center-bottom">
         <img src="../images/boys/b3.JPG" class="img-thumbnail" alt="Cinque Terre">
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
             <p>
             The hostel mess serves fresh and hygienic food.
              You will be provided with facilities like internet, 
@@ -78,10 +78,10 @@ mysqli_close($con);
              newspapers, magazines, etc.
             </p>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="col col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <img src="../images/boys/b5.JPG" class="img-thumbnail" alt="Cinque Terre">
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12 pg">
+        <div class="col col-lg-4 col-md-6 col-sm-12 pg" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <p>
             The hostels’ houses have a fully equipped gym and 
             separate courts for Volleyball, BasketBall, and 
@@ -92,7 +92,7 @@ mysqli_close($con);
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>All Review</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -125,7 +125,7 @@ mysqli_close($con);
         </div> 
         <!-- All NC-1 Review Table -->
         <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-1 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -156,7 +156,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-2 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-2 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -187,7 +187,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-3 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-3 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -218,7 +218,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-4 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-4 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -249,7 +249,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-5 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-5 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -280,7 +280,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-6 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Nek-Chand-6 Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -311,7 +311,7 @@ mysqli_close($con);
         </div> 
          <!-- All Zakir-A Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Zakir-A Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -342,7 +342,7 @@ mysqli_close($con);
         </div> 
          <!-- All Zakir-B Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Zakir-B Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -373,7 +373,7 @@ mysqli_close($con);
         </div> 
          <!-- All NC-1 Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Zakir-C Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -404,7 +404,7 @@ mysqli_close($con);
         </div> 
          <!-- All Zakir-D Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Zakir-D Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
@@ -435,7 +435,7 @@ mysqli_close($con);
         </div>
          <!-- All Govind Review Table -->
          <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h3>Govind Review Table</h3>
           <div class="data-fetch">
           <div class="card-body">
