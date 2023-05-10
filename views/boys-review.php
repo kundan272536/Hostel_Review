@@ -15,36 +15,53 @@ if(isset($_POST['submit'])){
 mysqli_close($con);
 ?>
 <style>
-   label, input, select {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px;
-  font-size: 20px;
- 
+     
+input, select, button {
+  margin: 5px;
+  margin-left: 40px;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;         
 }
 label{
- font-family: Georgia, 'Times New Roman', Times, serif;
-}
-input, select {
-  width: 350px;
-  height: 40px;
-  border-radius: 5px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: blue;
+  font-size: 20px;
 }
 .boys-rating{
-  border-radius: 10px;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  background-image: url(images/img81.jpg);
-  background-repeat: no-repeat;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  height: 600px;
+  width: 500px;
+  background-color: #B9E9FC;
+  
+}
+h3{
+  text-align: center;
+  font-family: fantasy;
+  color: red;
+}
+.back-image{
+  position: relative;
+  filter: blur(1px);
+  -webkit-filter: blur(2px);
+  margin-top: 0px;
   background-size: cover;
 }
 </style>
+<div class="back-image">
+  <img src="images/img8.jpg" alt="" height="0%" width="100%">
+</div>
+<div class="boys-rating" data-aos="fade-down">
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12">
-    <div class="boys-rating">
     <h3>Review Form</h3>
             <form action="" method="post">
-              <label for="">Name:</label>
+              <label for="">Name</label><br>
               <input type="text" name="name" placeholder="Enter your name" required><br>
               <label for="">Hostels:</label>
               <select name="hostels" id="">
@@ -60,7 +77,7 @@ input, select {
               <option value="Zakir-D">Zakir-D</option>
               <option value="Govind">Govind</option>
               </select><br>
-              <label for="">Services:</label>
+              <label for="">Services</label><br>
               <select name="facility" id="">
                 <option value="Electricity">Electricity</option>
                 <option value="Wifi">Wifi</option>
@@ -75,11 +92,11 @@ input, select {
                 <option value="Gym">Gym</option>
                 <option value="Dispencary">Dispensary</option>
               </select><br>
-              <label for="rating">Ratings:</label>
+              <label for="rating">Ratings</label><br>
               <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
-              <label for="">Review:</label>
-              <input type="text" name="review" placeholder="write your review" required><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 350px;margin-left: 90px;">Submit</button>
+              <label for="">Review</label><br>
+              <input type="text" name="review" placeholder="write your review" required><br><br>
+              <button type="submit" name="submit" class="btn btn-primary  " style="margin-left: 40px;">Submit</button>
             </form>
          </div>
         </div>

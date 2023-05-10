@@ -15,45 +15,56 @@ if(isset($_POST['submit'])){
 mysqli_close($con);
 ?>
 <style>
-   label, input, select {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px;
-  font-size: 20px;
-}
-input, select {
-  width: 350px;
-  height: 40px;
-  border-radius: 5px;
+   
+input, select, button {
+  margin: 5px;
+  margin-left: 40px;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
   box-shadow: 10px 10px 10px black;         
 }
 label{
+  margin-left: 40px;
   font-weight: bold;
   color: blue;
+  font-size: 20px;
 }
 .girls-rating{
-  border-radius: 10px;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  background-image: url(images/img81.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  height: 600px;
+  width: 500px;
+  background-color: #B9E9FC;
+  
 }
 h3{
+  text-align: center;
   font-family: fantasy;
-  color: #F97B22;
-
+  color: red;
+}
+.back-image{
+  position: relative;
+  filter: blur(1px);
+  -webkit-filter: blur(2px);
+  margin-top: 0px;
+  background-size: cover;
 }
 </style>
+<div class="back-image">
+  <img src="images/img8.jpg" alt="" height="0%" width="100%">
+</div>
+<div class="girls-rating" data-aos="fade-up">
 <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="girls-rating">
+<div class="col-lg-12 col-md-12 col-sm-12">  
             <h3>Review Form</h3>
             <form action=" " method="post">
-              <label for="name" >Name:</label>
-              <input type="text" placeholder="enter your name" name="name" required style="margin-left: 20px;" ><br>
-              <label for="hostels">Hostels:</label>
-              <select name="hostels" id="" required>
+              <label for="name" >Name</label><br>
+              <input type="text" placeholder="enter your name" name="name" required><br>
+              <label for="hostels">Hostels</label><br>
+              <select name="hostels" id="" required><br>
               <option value="Shukhna-A" >Shukhna-A</option>
               <option value="Shukhna-B" >Shukhna-B</option>
               <option value="Tagore" >Tagore</option>
@@ -63,7 +74,7 @@ h3{
               <option value="LC-C" >LC-C</option>
               <option value="LC-D" >LC-D</option>
               </select><br>
-              <label for="facility">Services:</label>
+              <label for="facility">Services</label><br>
               <select name="facility" id="" required >
                 <option value="Electricity">Electricity</option>
                 <option value="Wifi">Wifi</option>
@@ -78,16 +89,15 @@ h3{
                 <option value="Laundry">Laundry</option>
                 <option value="Dispencary">Dispenary</option>
               </select><br>
-              <label for="rating">Rating:</label>
-              <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required style="margin-left: 20px;" ><br>
-              <label for="review">Review:</label>
-              <input type="text" placeholder="write your review" name="review" required style="margin-left: 20px;" ><br>
-              <button type="submit" name="submit" class="btn btn-primary btn-lg " style="width: 350px;margin-left: 110px;" value="submit">Submit</button>
+              <label for="rating">Rating</label><br>
+              <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" placeholder="0-5" required><br>
+              <label for="review">Review</label><br>
+              <input type="text" placeholder="write your review" name="review" required ><br><br>
+              <button type="submit" name="submit" class="btn btn-primary "  value="submit" style="margin-left: 40px;">Submit</button>
             </form>
-          </div>
-        </div>
 </div>
-  
-        <?php
-        include('footer.php');
-        ?>
+</div>
+</div>
+<?php
+include('footer.php');
+?>

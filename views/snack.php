@@ -15,33 +15,38 @@ mysqli_close($con);
 ?>
 <style>
     #menu{
-        background-image: url(images/snacks1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+       background-color: #B2A4FF;
+       text-align: left;
+        height: 650px;
+        width: 500px;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #4F4557; 
         color: white;
     }
     h1{
+        text-align: center;
         font-family: fantasy;
-        color: #2192FF;
+        color: #F0FF42;
     }
     h3{
         font-family: fantasy;
         color: red;
     }
-    .menu-heading{
-        margin-left: 38.5%;
-        background-color: #C9EEFF;
-        height: 40px;
-        width: 350px;
-        border-radius: 5px;
+    label{
+        margin-left: 50px;
+        font-size: 20px;
     }
-    select,button{
+        select,button{
         font-family: 'Times New Roman', Times, serif;
+        margin: 10px;
+        margin-left: 40px;
         font-weight: bold;
-        margin-bottom: 10px;
-     color: #42EADDFF;
         font-size: 30px;
-        width: 350px;
+        width: 400px;
         height: 60px;
         border-radius: 10px;
         background: transparent;
@@ -49,8 +54,18 @@ mysqli_close($con);
         box-shadow: 5px 5px 5px #4F4557;       
 
     }
+    .back-image{
+  position: relative;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  margin-top: 0px;
+  background-size: cover;
+}
 </style>
-<div id="menu">
+<div class="back-image">
+    <img src="images/snacks.jpg" alt="" height="0%" width="100%">
+</div>
+<div id="menu" data-aos="fade-right">
 <h1>Suggest the Mess Menu</h1>
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -93,7 +108,7 @@ mysqli_close($con);
           <option value="Danish_Bun_Tea">Danish_Bun_Tea</option>
           <option value="Namkeen_Tea">Namkeen_Tea</option>
          </select><br>
-         <button type="submit" name="submit" class="btn btn-lg btn-success">Submit</button>
+         <button type="submit" name="submit" class="btn btn-success" style="margin-left: 40px;">Submit</button>
     </form>
         </div>
     </div>

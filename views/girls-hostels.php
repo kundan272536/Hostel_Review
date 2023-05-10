@@ -171,13 +171,13 @@ h3, h1{
         </div>  
      </div>
      <div class="review-page">
-     <h4>If you want give feedback <a href="girls-review.php">click here</a> </h4>
+     <h4>If you want give feedback <a href="girls-review.php"><button class="btn btn-info">Clickme</button></a> </h4>
     </div>
     <div class="menu">
-      <h4>Form related to mess menu <a href="breakfast.php">click here</a></h4>
+      <h4>Form related to mess menu <a href="breakfast.php"><button class="btn btn-info">Cickme</button></a></h4>
     </div>
-    <h3 data-aos="fade-down-right" data-aos-anchor-placement="center-bottom">Regular Mess Menu</h3>
-    <div class="mess-menu" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
+    <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Regular Mess Menu</h3>
+    <div class="mess-menu" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="data-fetch">
@@ -210,8 +210,8 @@ h3, h1{
                 </div>
             </div>
         </div>
-        <h3 data-aos="fade-down-left" data-aos-anchor-placement="center-bottom">All Reviews Given By Girls</h3>
-     <div class="rating" data-aos="flip-left" data-aos-anchor-placement="center-bottom">
+        <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">All Reviews Given By Girls</h3>
+     <div class="rating" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="data-fetch">

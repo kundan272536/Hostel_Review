@@ -42,7 +42,7 @@ include("header.php");
     }
 </style>
 <div class="heading">
-<marquee behavior="alphacoders" direction="right">
+<marquee behavior="alphacoders" direction="left">
   <h1>Welcome To Chandigarh University</h1>
 </marquee>
 </div>

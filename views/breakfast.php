@@ -17,13 +17,20 @@ mysqli_close($con);
 <style>
     
     #menu{
-        background-image: url(images/breakfast11.jpg);
-        backdrop-filter: blur(5px);
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        text-align: left;
+        background-color: #B2A4FF;
+        height: 750px;
+        width: 500px;
         color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #4F4557;       
+
     }
     h1{
+        text-align: center;
         font-family: fantasy;
         color: #F0FF42;
     }
@@ -31,20 +38,17 @@ mysqli_close($con);
         font-family: fantasy;
         color: red;
     }
-    .menu-heading{
-        margin-left: 38.5%;
-        background-color: #C9EEFF;
-        height: 40px;
-        width: 350px;
-        border-radius: 5px;
+    label{
+        margin-left: 50px;
+        font-size: 20px;
     }
     select,button{
         font-family: 'Times New Roman', Times, serif;
-        margin-bottom: 10px;
+        margin: 10px;
+        margin-left: 40px;
         font-weight: bold;
-        color: #D6ED17FF;
         font-size: 30px;
-        width: 350px;
+        width: 400px;
         height: 60px;
         border-radius: 10px;
         background: transparent;
@@ -52,14 +56,24 @@ mysqli_close($con);
         box-shadow: 5px 5px 5px #4F4557;       
 
     }
+     .back-image{
+  position: relative;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  margin-top: 0px;
+  background-size: cover;
+}
 </style>
-<div id="menu">
+<div class="back-image">
+    <img src="images/breakfast.jpg" alt="" height="0%" width="100%">
+</div>
+<div id="menu" data-aos="fade-right">
 <h1>Suggest the Mess Menu</h1>
 <div class="row breakfast">
     <div class="col-lg-12 col-md-12 col-sm-12">
        <form action="" method="post">
        <div class="menu-heading">
-        <marquee behavior="" direction=""> 
+        <marquee behavior="" direction="left"> 
             <h3>Select The Break Fast Menu</h3> 
         </marquee>
        </div>
@@ -103,10 +117,9 @@ mysqli_close($con);
           <option value="Bread_Jam_Butter_Milk">Bread_Jam_Butter_Milk</option>
           <option value="Daliya_Banana_Bread_Jam">Daliya_Banana_Bread_Jam</option>
          </select><br>  
-         <button type="submit" name="submit" class="btn btn-lg btn-success">Submit</button>
+         <button type="submit" name="submit" class="btn  btn-success" style="margin-left: 40px;">Submit</button>
     </form>
-    </div>
-    
+    </div>   
 </div>
 </div>
 

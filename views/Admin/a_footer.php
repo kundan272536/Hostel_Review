@@ -30,7 +30,7 @@
   <div class="row foot">
  <div class="col col-lg-4 col-md-4 col-sm-12 " >
   <div class="logo">
-  <img src="../images/cu-logo2.png" alt="" height="100px" width="300px" >
+  <img src="../images/logo1.png" alt="" height="90px" width="180px" >
   </div>
  </div>
   <div class="col col-lg-4 col-md-4 col-sm-12 social" >
