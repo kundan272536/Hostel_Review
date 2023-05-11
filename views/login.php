@@ -11,14 +11,14 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
 .container{
-  background-color: #ECF2FF;
-  /* color: white; */
+  background-color: #D4ADFC;
   position: absolute;
   top: 25%;
   left: 39%;
-  height: 300px;
+  height: 315px;
   width: 308px;
   border-radius: 10px;
+  color: white;
 }
 .btn{
   margin: 4px;
@@ -26,6 +26,9 @@
 }
 input{
   margin: 5px;
+}
+label{
+  margin-left: 5px;
 }
 .image{
   position: relative;

@@ -11,8 +11,8 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
 .container{
-  background-color: #ECF2FF;
-  /* color: white; */
+  background-color: #D4ADFC;
+  color: white;
   border-radius: 10px;
   position: absolute;
   top: 25%;
@@ -33,6 +33,9 @@ input{
   -webkit-filter: blur(1px);
   margin-top: 0px;
   background-size: cover;
+}
+label{
+  margin-left: 5px;
 }
 </style>
 <script>
@@ -58,13 +61,13 @@ input{
   <div class="container" data-aos="fade-right">
     <div class="col-lg-12 col-md-12 col-sm-12">
         <form action="registration.php" method="post" autocomplete="off">
-          <h2>Signin</h2>
+          <h2>Signup</h2>
           <div class="form-group">
-            <label for=""> User Name</label>
+            <label for=""> User Id</label>
             <input type="text" name="user" class="form-control"   placeholder="enter your uid..." required>
           </div>
           <div class="form-group">
-            <label for=""> Password</label>
+            <label for="">Create Password</label>
             <input type="password" name="password" id="password" class="form-control"   placeholder="enter your password..." required>
             <input type="checkbox" onclick="togglePassword()" id="password">Click Here To Show Password
           </div>

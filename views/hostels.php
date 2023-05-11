@@ -59,7 +59,7 @@ include("header.php");
     color: red;
     border-radius: 5px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 5px;
     background-color: #d6d4e0;
     box-shadow: 8px 8px 8px 6px #EDF7FA;
     
@@ -71,7 +71,7 @@ include("header.php");
 }
 
 </style>
-<div class="hostel-heading" data-aos="zoom-out-up">
+<div class="hostel-heading" >
   <marquee behavior="" direction="right">
   <h1>Welcome to Chandigarh University Hostels</h1>
   </marquee>
@@ -81,20 +81,7 @@ include("header.php");
 </div>  
 <div class="hostels">
   <div class="row">
-     <!-- <div class="col-lg-6 col-md-6 col-sm-12 ">
-        <img src="/images/hs10.jpg" class="img-fluid" alt="" style="margin:20px;" >      
-      <a href="girls-hostels">
-        <button type="button" class="btn btn-dark btn-lg">Girls` Hostels Details</button>
-      </a>
-     </div>
-     <div class="col-lg-6 col-md-6 col-sm-12">
-      <a href="boys-hostels">
-        <img src="/images/hs9.jpg" class="img-fluid"  alt="" style="margin:20px;" >
-      </a>
-      <a href="boys-hostels">
-        <button type="button" class="btn btn-dark btn-lg">Boys` Hostels Details</button>
-      </a>
-     </div>           -->
+     
      
      <div class="col-lg-6 col-md-6 col-sm-6">
       <div class="card" style="margin-left: 50px;" data-aos="fade-down">

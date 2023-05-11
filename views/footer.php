@@ -1,5 +1,11 @@
 <!--Footer-->
 <style>
+  footer{
+        
+        background-color:#B2A4FF;
+         text-align: justify;
+         color: white;  
+     }
     .social{
         padding-top: 20px;
         text-align: center;
@@ -18,7 +24,7 @@
     text-align: center;
    }
    span{
-    color: #B2A4FF;
+    color: black;
    }
    .logo{
    padding-top: 70px;
@@ -42,17 +48,17 @@
     </div>
     <div class="col col-lg-4 col-md-4 col-sm-12 "style="text-align:center;">
       <div class="contact-details">
-        <p>Boys-Hostels-Email-<span>nc.hostelcare@cumail.in</span> </p>
-        <p>Boys-Hostels-Mobile - +91-8288094335</p>
-        <p>Girls-Hostels-Email-<span>manager.gh1@cumail.in</span> </p>
-        <p>Girls-Hostels-Mobile- +91-7087003857</p>
+        <p>Boys-Hostels-Email:-<span>nc.hostelcare@cumail.in</span> </p>
+        <p>Boys-Hostels-Mobile:-<span>+91-8288094335</span></p>
+        <p>Girls-Hostels-Email:-<span>manager.gh1@cumail.in</span> </p>
+        <p>Girls-Hostels-Mobile:-<span>+91-7087003857</span> </p>
         <p>Email:-<span>cucet@cumail.in</span></p>
-        <p>Toll Free:- 1800121288800</p>
+        <p>Toll Free:-<span>1800121288800</span> </p>
       </div>
   </div>
   </div>
   <div class="copy-right">
-  <p >&#169 2023</p>
+  <p ><span>&#169 2023</span></p>
   </div>
 </footer>
 <!-- aos js link  -->
