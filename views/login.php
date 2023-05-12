@@ -11,14 +11,15 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
 .container{
-  background-color: #D4ADFC;
+  background-color: #B0DAFF;
   position: absolute;
   top: 25%;
   left: 39%;
   height: 315px;
   width: 308px;
   border-radius: 10px;
-  color: white;
+  color: black;
+  box-shadow: 10px 10px 10px black;
 }
 .btn{
   margin: 4px;
@@ -37,6 +38,7 @@ label{
   margin-top: 0px;
   background-size: cover;
 }
+
 </style>
 </head>
 <body>
