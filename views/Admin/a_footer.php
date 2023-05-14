@@ -2,7 +2,7 @@
 <style>
   footer{
         
-        background-color:#B2A4FF;
+        background-color:#208bee;
          text-align: justify;
          color: white;  
      }
