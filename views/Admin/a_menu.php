@@ -100,6 +100,7 @@ h3{
                                     <td>Snacks</td>
                                     <td>Dinner</td>
                                     <td>Delete</td>
+                                    <td>Update</td>
                                 </tr>
                                 <tr>
                                     <?php
@@ -113,8 +114,9 @@ h3{
                                     <td><?php echo $row['dinner'];?></td>
                                     <form action="" method="post">
                                         <input type="hidden" name="id" value="<?php echo $row['id']?>">
-                                        <td><button type="submit" name="delete" class="btn btn-danger"  >DELETE</button></td>
+                                        <td><button type="submit" name="delete" class="btn btn-danger">DELETE</button></td>
                                     </form>
+                                        <td><a href="menu_update.php"><button class="btn btn-success">UPDATE</button></a> </td>
                                     </tr>
                                     <?php
                                     }?>

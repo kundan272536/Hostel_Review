@@ -57,7 +57,7 @@
   </div>
   </div>
   <div class="copy-right">
-  <p ><span>&#169 2023</span></p>
+  <p ><span>&#169 <?php echo date("Y")?></span></p>
   </div>
 </footer>
 <!-- aos js link  -->

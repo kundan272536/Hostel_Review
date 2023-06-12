@@ -41,6 +41,7 @@ include("header.php");
       font-family: fantasy;
     }
 </style>
+
 <div class="heading">
 <marquee behavior="alphacoders" direction="left">
   <h1>Welcome To Chandigarh University</h1>

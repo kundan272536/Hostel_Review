@@ -1,9 +1,10 @@
 <?php
 session_start();
-header('Location:login.php');
 include('connection.php');
+header('Location:login.php');
 $name=$_POST['user'];
 $pass=$_POST['password'];
+$encpass=password_hash($pass,PASSWORD_DEFAULT);
 $first_character=substr($name,0,1);
 if($first_character=="S"){
     $quer="SELECT * FROM signin WHERE name='$name' && password='$pass'";
@@ -13,7 +14,7 @@ if($first_character=="S"){
         echo "Duplicates data";
     }
     else{
-        $qy="INSERT INTO signin(name,password) VALUE('$name','$pass')";
+        $qy="INSERT INTO signin(name,password) VALUE('$name','$encpass')";
         mysqli_query($con,$qy);
     }
 }
@@ -25,7 +26,7 @@ elseif($first_character=="E"){
         echo "Duplicates data";
     }
     else{
-        $qy="INSERT INTO esignin(name,password) VALUE('$name','$pass')";
+        $qy="INSERT INTO esignin(name,password) VALUE('$name','$encpass')";
         mysqli_query($con,$qy);
     }
 }
@@ -37,7 +38,7 @@ elseif($first_character=="A"){
         echo "Duplicates data";
     }
     else{
-        $qy="INSERT INTO asignin(name,password) VALUE('$name','$pass')";
+        $qy="INSERT INTO asignin(name,password) VALUE('$name','$encpass')";
         mysqli_query($con,$qy);
     }
 }

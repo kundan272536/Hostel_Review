@@ -27,7 +27,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <style>
   #navbarNav{
-    margin-left: 55%;
+    margin-left: 52%;
    }
 </style>
 <body >
@@ -58,6 +58,11 @@ if(!isset($_SESSION['username'])){
         </li>
         <li class="nav-item nav-text">
           <a class="nav-link "href="a_logout.php">Logout</a>
+        </li>
+        <li class="nav-item nav-text" style="margin-top:8px;">
+          <?php
+         echo $_SESSION['username'];
+          ?>
         </li>
       </ul>
     </div>
