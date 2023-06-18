@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2023 at 08:48 AM
+-- Generation Time: Jun 18, 2023 at 07:21 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -38,11 +38,7 @@ CREATE TABLE `asignin` (
 --
 
 INSERT INTO `asignin` (`id`, `name`, `password`) VALUES
-(1, 'A21MCA2029', 'admin'),
-(2, 'A21MCA20', 'admin'),
-(3, 'A21MCA2023', 'admin'),
-(4, 'A21MCA20209', 'admin'),
-(5, 'A21MCA2033', 'kundan');
+(8, 'A21MCA2029', '$2y$10$slJX.VRQ6u0LfPUS2gZaiutwwfchgBsyu0X22Ca4hLJQZ58jtC9ae');
 
 -- --------------------------------------------------------
 
@@ -176,9 +172,7 @@ CREATE TABLE `esignin` (
 --
 
 INSERT INTO `esignin` (`id`, `name`, `password`) VALUES
-(1, 'E21MCA2029', 'admin'),
-(2, 'E21MCA2028', '123456'),
-(3, 'E21MCA2045', 'Kundan');
+(4, 'E21MCA2029', '$2y$10$NI.WFYIOrod.Nhs0drfaL.O7JXL7LVJXPH0g0VNUgf75qLk11O/ui');
 
 -- --------------------------------------------------------
 
@@ -259,8 +253,6 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `day`, `date`, `breakfast`, `lunch`, `snacks`, `dinner`) VALUES
-(12, 'Monday', '2023-05-01', 'Poha,Corn Flakes,Tea, Milk', 'Black Chana, Gajar Matar, Ghiya Raita, Rice ', 'Mix Pakoda', 'Chicken Chilly,Paneer do Pyaza, Yellow dal, Rice'),
-(13, 'Tuesday', '2023-05-02', 'Stuffed_Parantha,Curd,Butter,Tea, Pickle', 'Dal_Makhani,Mix_Veg_Rice,Ghiya_Raita,Salad', 'Vef_Patties,Tea', 'White_Chana,Veg_Sambar,Halwa'),
 (15, 'Wednesday', '2023-05-03', 'Dalia, Omelete, Banana, Bread, Butter', 'Kadhi Gatta, Rice, Aloo Baigan', 'Danish Bun, Tea', 'Rajma, Rice, Hara Kaddu, Chapati'),
 (16, 'Thursday', '2023-05-04', 'Sabji_Puri, Tea', 'Dal_Makhani,Nutry_Matar, Boondi Raita, Rice, Chapati', 'Vada_Pav, Tea', 'Saboot_Masoor, Aloo_Gobhi, Rice, Sewaiyan');
 
@@ -281,13 +273,10 @@ CREATE TABLE `signin` (
 --
 
 INSERT INTO `signin` (`id`, `name`, `password`) VALUES
-(15, 'S21mca2029', 'kundan'),
-(16, 'S21MCA2029', 'admin'),
-(17, 'S21MCA2900', 'mansi'),
-(18, 'S21MCA2025', 'admin'),
-(24, 'S21MCA2026', 'admin'),
-(27, 'S21MCA2838', 'Sweta'),
-(28, 'S21MCA2050', 'Gajendra');
+(29, 'S21MCA2008', '$2y$10$feBGAUpOQVBG6oul0xlNCuRldGUlO43c0v4rxRHC9gDj4Et1HPhAW'),
+(30, 'S21MCA2001', '$2y$10$NlwAOhyJzUrf4trl84jA8Ol2Ck7uPNUyUlxpccJmwqvkVYqiqR8Cu'),
+(31, 'S21MCA2023', '$2y$10$m9J/mrLdHYRjbKIZOjcACOOlW2bM4ccBFQUEW/11c2YkHHPBCxadq'),
+(32, 'S21MCA2029', '$2y$10$kMfKCS6Gi7N0FAAbx5lvyeXWwxRN1HiBSexL.2d/cyGQJwCKwnGPC');
 
 -- --------------------------------------------------------
 
@@ -392,7 +381,7 @@ ALTER TABLE `snacks`
 -- AUTO_INCREMENT for table `asignin`
 --
 ALTER TABLE `asignin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `boys_feed_back`
@@ -422,7 +411,7 @@ ALTER TABLE `dinner`
 -- AUTO_INCREMENT for table `esignin`
 --
 ALTER TABLE `esignin`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `girls_feed_back`
@@ -446,7 +435,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `signin`
 --
 ALTER TABLE `signin`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `snacks`

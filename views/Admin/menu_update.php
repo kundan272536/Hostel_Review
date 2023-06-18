@@ -13,9 +13,6 @@ include("../connection.php");
             <td>Update</td>
     </tr>
 </table>
-<table>
-    
-</table>
 <?php
 include("a_footer.php");
 ?>
