@@ -8,9 +8,7 @@ if(isset($_POST['submit'])){
     $items4=$_POST['items4'];
     $items5=$_POST['items5'];
     $query="INSERT INTO breakfast VALUE('','$items1','$items2','$items3','$items4','$items5')";
-    mysqli_query($con,$query);
-    echo "<script>alert('Welcome to Main Course Page');</script>";
-    header('Location:lunch.php');
+    mysqli_query($con,$query);    header('Location:lunch.php');
 }
 mysqli_close($con);
 ?>
@@ -18,6 +16,7 @@ mysqli_close($con);
     
     #menu{
         position: absolute;
+        margin-top:50px;
         top: 15%;
         left: 35%;
         text-align: left;
@@ -65,7 +64,7 @@ mysqli_close($con);
 }
 </style>
 <div class="back-image">
-    <img src="images/breakfast.jpg" alt="" height="0%" width="100%">
+    <img src="images/breakfast11.jpg" alt="" height="0%" width="100%">
 </div>
 <div id="menu" data-aos="fade-right">
 <h1>Suggest the Mess Menu</h1>

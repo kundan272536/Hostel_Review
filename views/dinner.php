@@ -17,6 +17,7 @@ mysqli_close($con);
 <style>
     #menu{
         position: absolute;
+        margin-top:50px;
         top: 15%;
         left: 35%;
        background-color: #B2A4FF;

@@ -116,7 +116,10 @@ h3{
                                         <input type="hidden" name="id" value="<?php echo $row['id']?>">
                                         <td><button type="submit" name="delete" class="btn btn-danger">DELETE</button></td>
                                     </form>
-                                        <td><a href="menu_update.php"><button class="btn btn-success">UPDATE</button></a> </td>
+                                    <form action="menu_update.php" method="post">
+                                        <input type="hidden" name="id" value="<?php echo $row['id']?>">
+                                    <td><button type="submit" class="btn btn-success">UPDATE</button></td> 
+                                    </form>    
                                     </tr>
                                     <?php
                                     }?>
